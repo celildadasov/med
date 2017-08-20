@@ -1,0 +1,143 @@
+﻿@{ ViewBag.Title = "Index"; }
+@using WebApplication4.Models;
+
+<div id="services">
+    <!--innerBanner-->
+    <div class="innerBanner">
+        <img src="/Content/img/service.jpg" alt="">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <h2>Services</h2>
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--/innerBanner-->
+    <!--firstSection-->
+    <div class="firstSection sections ">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <!--jst-cov-->
+                <div class="jst-cov">
+                    <!--col-sm-12-->
+                    <div class="col-sm-12">
+                        <!--tittle-->
+                        <h2 class="tittle">
+                            <span>what</span> we offer / Departments
+                        </h2>
+                        <!--/tittle-->
+                    </div>
+                    <!--/col-sm-12-->
+                </div>
+                <!--jst-cov-->
+                @{
+                    foreach (Service item in Model)
+                    {
+                        <div class="col-sm-6 service">
+                            <div class="service-box">
+                                <img src="@item.image">
+                                <div class="lib">
+                                    <h2>@item.name</h2>
+                                    <p>
+                                        @item.text 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+
+
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--/firstSection-->
+    <!--secondSection-->
+    <div class="happyClients secondSection">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <!--col-sm-12-->
+                <div class="col-sm-12">
+                    <!--tittle-->
+                    <h2 class="tittle">
+                        <span>our</span>happy clients
+                    </h2>
+                    <!--/tittle-->
+                </div>
+                <!--col-sm-12-->
+                <!--slider-cover-->
+                <div class="slider-cover">
+                    <!--bx-wrapper-->
+                    <div class="bx-wrapper">
+                        <!--bx-viewport-->
+                        <div class="bx-viewport" style="height: 163px;">
+                            <!--happy-->
+                            <ul class="happy">
+                                @{
+                                    foreach (feedback item in ViewBag.Murtaza)
+                                    {
+                                        <li style="width: 1170px; left: -1170px;">
+                                            <div class="col-sm-2"><img src="@item.image"></div>
+                                            <div class="col-sm-10 small-let">
+                                                <p>
+                                                   @item.patient_feedback
+                                                </p>
+                                                <h2>by<span>@item.Appoinment.name @item.Appoinment.surname</span></h2>
+                                            </div>
+                                        </li>
+                                    }
+                                }
+
+                               
+                            </ul>
+                            <!--/happy-->
+                        </div>
+                        <!--/bx-viewport-->
+                        <!--bx-controls-->
+                        <div class="bx-controls bx-has-pager bx-has-controls-direction">
+                            <!--bx-pager-->
+                            
+                            <div class="bx-pager bx-default-pager">
+                                @{
+                                                int i = 0;
+                                                foreach (feedback item in ViewBag.Murtaza)
+                                                {
+
+                                                    int a = i + 1;
+                                                    if (i == 1)
+                                                    {
+                                            <div class="bx-pager-item" onclick="moveFunction(this)"><a class="bx-pager-link active">@a</a></div>
+                                        }
+                                        else if(i<4)
+                                        {
+                                            <div class="bx-pager-item" onclick="moveFunction(this)"><a class="bx-pager-link">@a</a></div>
+                                        }
+                                    i++;
+                                    }
+                                }
+                                <script>arrLength=@i</script>
+                                
+                            </div>
+                            <!--/bx-pager-->
+                        </div>
+                        <!--/bx-controls-->
+                    </div>
+                    <!--bx-wrapper-->
+                </div>
+                <!--slider-cover-->
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--secondSection-->
+</div>

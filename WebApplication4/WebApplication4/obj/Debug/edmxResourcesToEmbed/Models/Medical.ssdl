@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Medical_ThemeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Appoinment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="departmentCountry_id" Type="int" />
+    <Property Name="surname" Type="nchar" MaxLength="30" Nullable="false" />
+    <Property Name="phone" Type="int" Nullable="false" />
+    <Property Name="date_birth" Type="date" Nullable="false" />
+    <Property Name="name" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="appo_date" Type="date" Nullable="false" />
+    <Property Name="gender" Type="int" Nullable="false" />
+    <Property Name="message" Type="nchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="author">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="blog">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="blog_name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="blog_author" Type="int" Nullable="false" />
+    <Property Name="blog_tags" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="blog_text" Type="varchar" MaxLength="350" Nullable="false" />
+    <Property Name="blog_date" Type="date" Nullable="false" />
+    <Property Name="blog_img" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="blog_category" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="categories">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="category_name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="comment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="phone" Type="int" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="comments" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contact_us">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="phone" Type="int" Nullable="false" />
+    <Property Name="comment" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="departDoctor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="department_id" Type="int" Nullable="false" />
+    <Property Name="doctor_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="department_about" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="department_image" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="department_icon" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="departmentCountry">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="country_name" Type="nchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Doctors">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="surname" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="speciality" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="gender" Type="int" Nullable="false" />
+    <Property Name="facebook_adress" Type="varchar" MaxLength="70" />
+    <Property Name="twitter_adress" Type="varchar" MaxLength="70" />
+    <Property Name="google_adress" Type="varchar" MaxLength="70" />
+    <Property Name="image" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="feedback">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="patient_feedback" Type="nchar" MaxLength="500" Nullable="false" />
+    <Property Name="patient_id" Type="int" Nullable="false" />
+    <Property Name="image" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="news">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="news_name" Type="varchar" MaxLength="30" />
+    <Property Name="news_author" Type="int" Nullable="false" />
+    <Property Name="news_text" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="news_img" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="news_date" Type="date" Nullable="false" />
+    <Property Name="news_category" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Services">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="text" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="image" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="worktime">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="doctor_id" Type="int" Nullable="false" />
+    <Property Name="begin_time" Type="datetime" Nullable="false" />
+    <Property Name="end_time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Appoinment_departmentCountry">
+    <End Role="departmentCountry" Type="Self.departmentCountry" Multiplicity="0..1" />
+    <End Role="Appoinment" Type="Self.Appoinment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="departmentCountry">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Appoinment">
+        <PropertyRef Name="departmentCountry_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_blog_author">
+    <End Role="author" Type="Self.author" Multiplicity="1" />
+    <End Role="blog" Type="Self.blog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="author">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="blog">
+        <PropertyRef Name="blog_author" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_blog_categories">
+    <End Role="categories" Type="Self.categories" Multiplicity="1" />
+    <End Role="blog" Type="Self.blog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categories">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="blog">
+        <PropertyRef Name="blog_category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_departDoctor_Department">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="departDoctor" Type="Self.departDoctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="departDoctor">
+        <PropertyRef Name="doctor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_departDoctor_Doctors">
+    <End Role="Doctors" Type="Self.Doctors" Multiplicity="1" />
+    <End Role="departDoctor" Type="Self.departDoctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Doctors">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="departDoctor">
+        <PropertyRef Name="doctor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_feedback_Appoinment">
+    <End Role="Appoinment" Type="Self.Appoinment" Multiplicity="1" />
+    <End Role="feedback" Type="Self.feedback" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appoinment">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="feedback">
+        <PropertyRef Name="patient_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_news_author1">
+    <End Role="author" Type="Self.author" Multiplicity="1" />
+    <End Role="news" Type="Self.news" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="author">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="news">
+        <PropertyRef Name="news_author" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_news_categories">
+    <End Role="categories" Type="Self.categories" Multiplicity="1" />
+    <End Role="news" Type="Self.news" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categories">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="news">
+        <PropertyRef Name="news_category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_worktime_Doctors">
+    <End Role="Doctors" Type="Self.Doctors" Multiplicity="1" />
+    <End Role="worktime" Type="Self.worktime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Doctors">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="worktime">
+        <PropertyRef Name="doctor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Medical_ThemeModelStoreContainer">
+    <EntitySet Name="Appoinment" EntityType="Self.Appoinment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="author" EntityType="Self.author" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="blog" EntityType="Self.blog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="categories" EntityType="Self.categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="comment" EntityType="Self.comment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contact_us" EntityType="Self.Contact_us" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="departDoctor" EntityType="Self.departDoctor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="departmentCountry" EntityType="Self.departmentCountry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Doctors" EntityType="Self.Doctors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="feedback" EntityType="Self.feedback" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="news" EntityType="Self.news" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Services" EntityType="Self.Services" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="worktime" EntityType="Self.worktime" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Appoinment_departmentCountry" Association="Self.FK_Appoinment_departmentCountry">
+      <End Role="departmentCountry" EntitySet="departmentCountry" />
+      <End Role="Appoinment" EntitySet="Appoinment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_blog_author" Association="Self.FK_blog_author">
+      <End Role="author" EntitySet="author" />
+      <End Role="blog" EntitySet="blog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_blog_categories" Association="Self.FK_blog_categories">
+      <End Role="categories" EntitySet="categories" />
+      <End Role="blog" EntitySet="blog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_departDoctor_Department" Association="Self.FK_departDoctor_Department">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="departDoctor" EntitySet="departDoctor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_departDoctor_Doctors" Association="Self.FK_departDoctor_Doctors">
+      <End Role="Doctors" EntitySet="Doctors" />
+      <End Role="departDoctor" EntitySet="departDoctor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_feedback_Appoinment" Association="Self.FK_feedback_Appoinment">
+      <End Role="Appoinment" EntitySet="Appoinment" />
+      <End Role="feedback" EntitySet="feedback" />
+    </AssociationSet>
+    <AssociationSet Name="FK_news_author1" Association="Self.FK_news_author1">
+      <End Role="author" EntitySet="author" />
+      <End Role="news" EntitySet="news" />
+    </AssociationSet>
+    <AssociationSet Name="FK_news_categories" Association="Self.FK_news_categories">
+      <End Role="categories" EntitySet="categories" />
+      <End Role="news" EntitySet="news" />
+    </AssociationSet>
+    <AssociationSet Name="FK_worktime_Doctors" Association="Self.FK_worktime_Doctors">
+      <End Role="Doctors" EntitySet="Doctors" />
+      <End Role="worktime" EntitySet="worktime" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

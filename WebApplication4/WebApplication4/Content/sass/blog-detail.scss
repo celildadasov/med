@@ -1,0 +1,108 @@
+    #blogDetail{
+        
+        .leftSection{
+            .quote{
+                p{
+                    font-family: 'Lora', serif;
+                    font-style: italic;
+                    font-size: 15px;
+                    color: #383d48;
+                    padding-left: 127px;
+                    background: url(../img/quote-circle.png) 6% 40% no-repeat;
+                    }
+                }
+
+                .comments{
+                    margin: 40px 0;
+                    width: 100%;
+                    float: left;
+                    h2{
+                        font-size: 24px;
+                        color: #383d48;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        }
+
+                        ul{
+                            li{
+                                padding: 35px 0;
+                                float: left;
+                                border-bottom: 1px solid #dce8f1;
+                                h3{
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                    text-transform: uppercase;
+                                    span{
+                                        float: right;
+                                        color: #383d48;
+                                        }
+                                    }
+
+                                    p{
+                                        line-height: 19px;
+                                        padding: 6px 0 0 0;
+                                        }
+
+                                        .bg{
+                                            background-position: 100% 8px;
+                                            }
+
+                                            a{
+                                                font-size: 13.5px;
+                                                color: #383d48;
+                                                padding-right: 10px;
+                                                float: left;
+                                                margin: 20px 0 0 0;
+                                                }
+                                }
+                            }
+                    }
+
+
+            }
+
+            .commentLeave{
+                padding: 60px 0;
+                .container{
+                    .row{
+                        .center{
+                            float: none;
+                            margin: 0 auto;
+                            padding: 0;
+                            h2{
+                                font-size: 24px;
+                                color: #383d48;
+                                font-weight: 800;
+                                text-transform: uppercase;
+                                }
+
+                                .form-less{
+                                    padding: 25px 0 0;
+                                    input{
+                                        border: 1px solid #e2ecf5;
+                                        width: 100%;
+                                        height: auto;
+                                        margin: 5px 0;
+                                        outline: medium none;
+                                        padding: 10px 15px;
+                                        color: #6e868c;
+                                        font-size: 13.5px;
+                                        }
+                                    }
+
+                                    button{
+                                        border: none;
+                                        border-radius: 4px;
+                                        outline: none;
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        color: white;
+                                        background: #f6772c;
+                                        text-transform: uppercase;
+                                        padding: 8px 23px;
+                                        }
+                            }
+                        }
+                    }
+                }        
+        }

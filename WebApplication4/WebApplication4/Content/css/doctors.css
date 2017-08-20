@@ -1,0 +1,64 @@
+#doctors .jst-cov {
+  float: left;
+  padding-bottom: 15px;
+  width: 50%; }
+#doctors .filter button {
+  outline: none;
+  border: none;
+  background: #6acff0;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  width: 127px;
+  padding: 10px 0;
+  margin: 0 0 0 12px;
+  float: right; }
+#doctors .filter .select {
+  width: 67%; }
+#doctors .doc .doctor {
+  border-bottom: 2px solid #ffe073;
+  padding-bottom: 16px;
+  margin-bottom: 40px; }
+  #doctors .doc .doctor img {
+    float: left; }
+  #doctors .doc .doctor .social-net {
+    float: none;
+    text-align: center;
+    width: 64px;
+    height: 30px;
+    clear: both;
+    margin: 0 auto;
+    padding-top: 11px; }
+    #doctors .doc .doctor .social-net a {
+      padding: 14px 18px 5px 0;
+      float: left; }
+    #doctors .doc .doctor .social-net .face-d {
+      background: url(../img/face.png) left top no-repeat; }
+      #doctors .doc .doctor .social-net .face-d:hover {
+        background: url(../img/face-hov.png) left top no-repeat; }
+    #doctors .doc .doctor .social-net .twitt-d {
+      background: url(../img/twitt.png) left top no-repeat; }
+      #doctors .doc .doctor .social-net .twitt-d:hover {
+        background: url(../img/twitt-hov.png) left top no-repeat; }
+    #doctors .doc .doctor .social-net .google-d {
+      background: url(../img/google.png) left top no-repeat; }
+      #doctors .doc .doctor .social-net .google-d:hover {
+        background: url(../img/google-hov.png) left top no-repeat; }
+  #doctors .doc .doctor h2 {
+    color: #383d48;
+    font-weight: 800;
+    font-size: 13.5px;
+    text-align: center;
+    text-transform: uppercase; }
+    #doctors .doc .doctor h2 span {
+      display: block;
+      color: #4c6880;
+      font-size: 13px;
+      font-weight: normal;
+      padding-top: 5px; }
+#doctors .doc:hover .doctor {
+  border-bottom: 2px solid #6acff0; }
+
+/*# sourceMappingURL=doctors.css.map */

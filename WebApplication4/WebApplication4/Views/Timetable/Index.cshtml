@@ -1,0 +1,183 @@
+﻿@{ ViewBag.Title = "Index"; } 
+ @using WebApplication4.Models;
+<div id="timetable">
+    <div class="innerBanner">
+        <img src="/Content/img/doctors.jpg" alt="">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <h2>doctors</h2>
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--firstSection-->
+    <div class="firstSection sections">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <!--jst-cov-->
+                <div class="jst-cov">
+                    <!--col-sm-6-->
+                    <div class="col-sm-6">
+                        <!--tittle-->
+                        <h2 class="tittle">
+                            <span>
+                                doctors
+                            </span> doctors
+                        </h2>
+                        <!--/tittle-->
+                    </div>
+                    <!--/col-sm-6-->
+                </div>
+                <!--/jst-cov-->
+                <!--filter-->
+                <div class="col-md-6 col-lg-6 filter">
+                    <button type="button">Filter</button>
+                    <!--select-->
+                    <div class="select"  onclick="selectDownFunction()">
+                        <a class="selectDown"></a>
+                        <a class="sbSelect">Select Departments</a>
+                        <!--ul-->
+                        <ul class="selectOptions close">
+                            @{
+                                foreach (departmentCountry item in ViewBag.Ibrahim)
+                                {
+                                    <li><a onclick="selectFunction(@item.id,this)">@item.country_name</a></li>
+
+                                }
+                            }
+                        </ul>
+                        <!--/ul-->
+                    </div>
+                    <!--/select-->
+                </div>
+                <!--/filter-->
+                <!--doctors-->
+                <div class="col-sm-12 doctors">
+
+                    @{
+                        int i = 0;
+                        foreach (worktime item in ViewBag.wt)
+                        {
+                            <div class="col-sm-3 doc">
+                                @if (i == 0)
+                                {
+                                    <div class="doctor active">
+                                        <img src="@item.Doctor.image">
+                                        @if (item.begin_time.DayOfWeek == item.end_time.DayOfWeek)
+                                        {
+                                            <h3 class="h3active">
+                                                @item.begin_time.DayOfWeek : @item.begin_time.ToString("hh tt") - @item.end_time.ToString("hh tt")
+
+                                            </h3>
+                                        }
+                                        else
+                                        {
+                                            <h3 class="h3active">@item.begin_time.DayOfWeek to @item.end_time.DayOfWeek : @item.begin_time.ToString("hh tt") - @item.end_time.ToString("hh tt")</h3>
+
+                                        }
+                                        <div class="social-net">
+
+                                            @if (item.Doctor.facebook_adress == null)
+                                            {
+                                                <a class="face-d"></a>
+                                            }
+
+                                            else
+                                            {
+                                                <a class="face-d" href="@item.Doctor.facebook_adress"></a>
+                                            }
+
+                                            @if (item.Doctor.twitter_adress == null)
+                                            {
+                                                <a class="twitt-d"></a>
+                                            }
+                                            else
+                                            {
+                                                <a class="twitt-d" href="@item.Doctor.twitter_adress"></a>
+                                            }
+                                            @if (item.Doctor.google_adress == null)
+                                            {
+                                                <a class="google-d"></a>
+                                            }
+                                            else
+                                            {
+                                                <a class="google-d" href="@item.Doctor.google_adress"></a>
+                                            }
+
+                                        </div>
+                                        <h2>Dr. @item.Doctor.name @item.Doctor.surname<span>@item.Doctor.speciality</span></h2>
+                                    </div>
+
+                                }
+
+                                else
+                                {
+                                    <div class="doctor">
+                                        <img src="@item.Doctor.image">
+                                            @if (item.begin_time.DayOfWeek == item.end_time.DayOfWeek)
+                                            {
+                                             <h3>
+                                                @item.begin_time.DayOfWeek : @item.begin_time.ToString("hh tt") - @item.end_time.ToString("hh tt")
+
+                                            </h3>
+                                            }
+                                            else
+                                            {
+                                                <h3>@item.begin_time.DayOfWeek to @item.end_time.DayOfWeek : @item.begin_time.ToString("hh tt") - @item.end_time.ToString("hh tt")</h3>
+                                                
+                                            }
+                                        <div class="social-net">
+
+                                            @if (item.Doctor.facebook_adress == null)
+                                            {
+                                                <a class="face-d"></a>
+                                            }
+
+                                            else
+                                            {
+                                                <a class="face-d" href="@item.Doctor.facebook_adress"></a>
+                                            }
+
+                                            @if (item.Doctor.twitter_adress == null)
+                                            {
+                                                <a class="twitt-d"></a>
+                                            }
+                                            else
+                                            {
+                                                <a class="twitt-d" href="@item.Doctor.twitter_adress"></a>
+                                            }
+                                            @if (item.Doctor.google_adress == null)
+                                            {
+                                                <a class="google-d"></a>
+                                            }
+                                            else
+                                            {
+                                                <a class="google-d" href="@item.Doctor.google_adress"></a>
+                                            }
+
+                                        </div>
+                                        <h2>Dr. @item.Doctor.name @item.Doctor.surname<span>@item.Doctor.speciality</span></h2>
+                                    </div>
+
+                                }
+                            </div>
+
+                            i++;
+                        }
+                    }
+
+
+                            </div>
+                <!--/doctors-->
+            </div>
+            <!--row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--firstSection-->
+</div>

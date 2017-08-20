@@ -1,0 +1,205 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@using WebApplication4.Models;
+
+<div id="aboutUs">
+    <!--innerBanner-->
+    <div class="innerBanner">
+        <img src="/Content/img/about-us.jpg" alt="">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <h2>about us</h2>
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--/innerBanner-->
+    <!--history-->
+    <div class="history sections firstSection">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <!--col-sm-8 Left Part-->
+                <div class="col-sm-8">
+                    <h2 class="tittle"><span>our</span>history</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <br>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,</p>
+                </div>
+                <!--/col-sm-8 Left Part-->
+                <!--col-sm-4 Right Part-->
+                <div class="col-sm-4">
+                    <!--Big(Right) Picture-->
+                    <div>
+                        <img src="/Content/img/big-im.jpg" alt="">
+                    </div>
+                    <!--/Big Picture-->
+                    <!--Small(Left) Picture-->
+                    <div>
+                        <img src="/Content/img/small-im.jpg" alt="">
+                    </div>
+                </div>
+                <!--/Small Picture-->
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--/history-->
+    <!--Department-->
+    <div class="departmentSection secondSection">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <!--department-->
+                <div class="col-sm-12 department">
+                    <h2 class="tittle"><span>Our</span>department</h2>
+                </div>
+                <!--/department-->
+                <!--depAccordion-->
+                <div class="col-sm-12 depAccordion">
+                    <!--col-sm-6-->
+                    <div class="col-sm-6">
+                        <!--aboutAccordionList-->
+                        <ul class="aboutAccordionList">
+
+                            @{
+
+                                int i = 0;
+                                foreach (Department item in Model)
+                                {
+                                    if (i == 0)
+                                    {
+                                        <li><h3 class="minus" onclick="aboutaccordionFunction(this)"><img src="@item.department_icon" alt="@item.name" /><span>@item.name</span></h3><div id="down1"><img src="@item.department_image" alt="@item.name" /><p>@item.department_about</p></div></li>
+
+                                    }
+
+                                    else if (i < Model.Count / 2)
+                                    {
+                                        <li><h3 class="plus" onclick="aboutaccordionFunction(this)"><img src="@item.department_icon" alt="@item.name" /><span>@item.name</span></h3><div id="down2"><img src="@item.department_image" alt="@item.name" /><p>@item.department_about</p></div></li>
+                                    }
+                                    i++;
+                                }
+                            }
+
+                        </ul>
+                        <!--/aboutAccordionList-->
+                    </div>
+                    <!--/col-sm-6-->
+                    <!--col-sm-6-->
+                    <div class="col-sm-6">
+                        <!--aboutAccordionList-->
+                        <ul class="aboutAccordionList">
+
+                            @{
+
+                                i = 0;
+                                foreach (Department item in Model)
+                                {
+                                    if (i >= Model.Count / 2)
+                                    {
+                                        <li><h3 class="plus" onclick="aboutaccordionFunction(this)"><img src="@item.department_icon" alt="@item.name" /><span>@item.name</span></h3><div id="down2"><img src="@item.department_image" alt="@item.name" /><p>@item.department_about</p></div></li>
+                                    }
+                                    i++;
+                                }
+                            }
+                            <script>
+aboutAcHeadingLength = @Model.Count;
+                            </script>
+
+                        </ul>
+                        <!--/aboutAccordionList-->
+                    </div>
+                    <!--/col-sm-6-->
+                </div>
+                <!--/depAccordion-->
+            </div>
+            <!--/row-->
+        </div>
+        <!--/accordion-->
+    </div>
+    <!--/Department-->
+    <!--quickService-->
+    <div class="quickService">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+
+                <!--Quick Service Part 1-->
+                <div class="col-sm-3">
+                    <img src="/Content/img/icon-doc-var1.png" alt="Find A Doctor">
+
+                    <!--Quick Service Text-->
+                    <div class="qsText">
+                        <h2>Find a Doctor</h2>
+                        <p>Scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    </div>
+                    <!--/Quick Service Text-->
+
+                    <a href="#"></a>
+
+                </div>
+                <!--/Quick Service Part 1-->
+                <!--Quick Service Part 2-->
+                <div class="col-sm-3">
+                    <img src="/Content/img/icon-dep-var1.png" alt="Departments">
+
+                    <!--Quick Service Text-->
+                    <div class="qsText">
+                        <h2>DEPARTMENTS</h2>
+                        <p>Scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    </div>
+                    <!--/Quick Service Text-->
+
+                    <a href="#"></a>
+
+                </div>
+                <!--/Quick Service Part 2-->
+                <!--Quick Service Part 3-->
+                <div class="col-sm-3">
+                    <img src="/Content/img/icon-loc-var1.png" alt="Our Locations">
+
+                    <!--Quick Service Text-->
+                    <div class="qsText">
+                        <h2>Our Locations</h2>
+                        <p>Scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    </div>
+                    <!--/Quick Service Text-->
+
+                    <a href="#"></a>
+
+                </div>
+                <!--/Quick Service Part 3-->
+                <!--Quick Service Part 4-->
+                <div class="col-sm-3">
+                    <img src="/Content/img/icon-pay-var1.png" alt="pay your bill online">
+
+                    <!--Quick Service Text-->
+                    <div class="qsText">
+                        <h2>pay your bill online</h2>
+                        <p>Scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    </div>
+                    <!--/Quick Service Text-->
+
+                    <a href="#"></a>
+
+                </div>
+                <!--/Quick Service Part 4-->
+
+
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--/quickService-->
+</div>

@@ -1,0 +1,98 @@
+#doctors{
+  .jst-cov{
+      float: left;
+      padding-bottom: 15px;
+      width: 50%;
+  }
+
+  .filter{
+      button{
+                    outline: none;
+                    border: none;
+                    background: #6acff0;
+                    color: white;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-size: 13px;
+                    font-weight: 700;
+                    width: 127px;
+                    padding: 10px 0;
+                    margin: 0 0 0 12px;
+                    float: right;
+                    }
+
+                .select{
+                    width: 67%;
+                }
+  }
+
+  
+          .doc{
+            .doctor{
+                border-bottom: 2px solid #ffe073;
+                padding-bottom: 16px;
+                margin-bottom: 40px;
+                img{
+                    float: left;
+                }
+                .social-net{
+                    float: none;
+                    text-align: center;
+                    width: 64px;
+                    height: 30px;
+                    clear: both;
+                    margin: 0 auto;
+                    padding-top: 11px;
+                    a{
+                        padding: 14px 18px 5px 0;
+                        float: left;
+
+                    }
+                    .face-d{
+                     background: url(../img/face.png) left top no-repeat;
+                     &:hover{
+                         background: url(../img/face-hov.png) left top no-repeat;
+                     }
+                    }
+                    .twitt-d{
+                        background: url(../img/twitt.png) left top no-repeat;
+                        &:hover{
+                            background: url(../img/twitt-hov.png) left top no-repeat;
+                        }
+                    }
+                    .google-d{
+                        background:url(../img/google.png) left top no-repeat;
+                        &:hover{
+                            background: url(../img/google-hov.png) left top no-repeat;
+                        }
+                    }
+                }
+                h2{
+                    color: #383d48;
+                    font-weight: 800;
+                    font-size: 13.5px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    span{
+                        display: block;
+                        color: #4c6880;
+                        font-size: 13px;
+                        font-weight: normal;
+                        padding-top: 5px;
+
+                    }
+                }
+            }
+
+            &:hover{
+                .doctor{
+                    border-bottom: 2px solid #6acff0;
+                }
+            }
+          }
+
+
+
+      
+
+}

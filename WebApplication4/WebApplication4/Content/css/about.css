@@ -1,0 +1,66 @@
+#aboutUs .history {
+  clear: both; }
+  #aboutUs .history .col-sm-8 h2 {
+    font-size: 24px; }
+  #aboutUs .history .col-sm-8 p {
+    font-size: 13px;
+    color: #4c6880;
+    line-height: 22px; }
+  #aboutUs .history .col-sm-4 {
+    position: relative; }
+    #aboutUs .history .col-sm-4 div:first-child img {
+      float: right; }
+    #aboutUs .history .col-sm-4 div:nth-child(2) img {
+      position: absolute;
+      top: 113px; }
+#aboutUs .departmentSection {
+  clear: both;
+  padding: 60px 0; }
+  #aboutUs .departmentSection .container .row .depAccordion {
+    padding: 0; }
+    #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 {
+      width: 50%;
+      border: none; }
+      #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li {
+        width: 100%;
+        float: left; }
+        #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li h3 {
+          border: solid 1px #dceaf6;
+          border-bottom: none;
+          background-color: #f0f8ff !important;
+          cursor: pointer;
+          font-size: 12.5px;
+          color: #383d48;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding: 9px 17px;
+          width: 100%; }
+        #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down1 {
+          background-color: aliceblue;
+          padding: 28px 15px;
+          display: block;
+          border-top: 1px solid #dceaf6; }
+        #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down2 {
+          display: block;
+          height: 0;
+          padding-top: 0;
+          padding-bottom: 0; }
+        #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down1,
+        #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down2 {
+          float: left;
+          width: 100%; }
+          #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down1 img,
+          #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down2 img {
+            padding-right: 10px;
+            float: left;
+            width: 198px;
+            height: 104px; }
+          #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down1 p,
+          #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down2 p {
+            color: #4c6880;
+            font-size: 13px;
+            padding-bottom: 10px; }
+      #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li:last-child h3 {
+        border-bottom: 1px solid #dceaf6; }
+
+/*# sourceMappingURL=about.css.map */

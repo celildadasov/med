@@ -1,0 +1,95 @@
+﻿@{ ViewBag.Title = "Index"; }
+
+@using WebApplication4.Models;
+
+<div id="news">
+    <div class="innerBanner">
+        <img src="/Content/img/news.jpg" alt="">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <h2>News</h2>
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--firstSection-->
+    <div class="firstSection sections">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <!--col-sm-6-->
+                <div class="col-sm-6">
+                    <h2 class="tittle"><span>Latest</span>Updates</h2>
+                </div>
+                <!--/col-sm-6-->
+                <!--filter-->
+                <div class="col-md-6 col-lg-6 filter">
+                    <button type="button">Filter</button>
+                    <!--select-->
+                    <div class="select" onclick="selectDownFunction()">
+                        <a class="selectDown"></a>
+                        <a class="sbSelect">Select by popularity</a>
+                        <!--ul-->
+                        <ul class="selectOptions close">
+                            @{
+                                foreach (departmentCountry item in ViewBag.Ibrahim)
+                                {
+                                    <li><a onclick="selectFunction(@item.id,this)">@item.country_name</a></li>
+
+                                }
+                            }
+                        </ul>
+                        <!--/ul-->
+                    </div>
+                    <!--/select-->
+                </div>
+                <!--/filter-->
+                <!--newsSection-->
+                <div class="col-sm-12 newsSection">
+                    @{
+                        foreach (news item in Model)
+                        {
+                            <div class="col-sm-12 newsCovering">
+                                <div class="col-sm-2 imageSection">
+                                    <img src="@item.news_img">
+                                    @switch (item.news_date.Month)
+                                    {
+
+                                        case 1: <h2>JANUARY / @item.news_date.Day / @item.news_date.Year</h2> break;
+                                        case 2: <h2>FEBRUARY / @item.news_date.Day / @item.news_date.Year</h2> break;
+                                        case 3: <h2>MARCH / @item.news_date.Day / @item.news_date.Year</h2> break;
+                                        case 4: <h2>APRIL / @item.news_date.Day / @item.news_date.Year</h2> break;
+                                        case 5: <h2>MAY / @item.news_date.Day / @item.news_date.Year</h2> break;
+                                        case 6: <h2>JUNE / @item.news_date.Day / @item.news_date.Year</h2> break;
+                                        case 7: <h2>JULY / @item.news_date.Day / @item.news_date.Year</h2> break;
+                                        case 8: <h2>AUGUST / @item.news_date.Day / @item.news_date.Year</h2> break;
+                                        case 9: <h2>SEPTEMBER / @item.news_date.Day / @item.news_date.Year</h2> break;
+                                        case 10: <h2>OCTOBER / @item.news_date.Day / @item.news_date.Year</h2> break;
+                                        case 11: <h2>NOVEMBER / @item.news_date.Day / @item.news_date.Year</h2> break;
+                                        case 12: <h2>DECEMBER / @item.news_date.Day / @item.news_date.Year</h2> break;
+
+                                    }
+                                </div>
+                                <div class="col-sm-10 newsDetail">
+                                    <h2>News Heading: @item.news_name.<span>by : @item.author.name</span></h2>
+                                    <p>
+                                        @item.news_text
+                                    </p>
+                                </div>
+                            </div>
+
+                        }
+                    }
+                </div>
+                <!--/newsSection-->
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--/firstSection-->
+</div>

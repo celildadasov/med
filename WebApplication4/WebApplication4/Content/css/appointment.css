@@ -1,0 +1,38 @@
+#appointment .firstSection .row .inputs .appointments input, #appointment .firstSection .row .inputs .appointments textarea {
+  width: 100%;
+  height: auto;
+  color: #6e868c;
+  border: 1px solid #e4edf6;
+  padding: 9px 15px;
+  margin: 7px 0;
+  font-size: 13.5px; }
+#appointment .firstSection .row .inputs .appointments textarea {
+  resize: none;
+  min-height: 180px; }
+#appointment .firstSection .row .inputs .appointments button {
+  background: none repeat scroll 0 0 #f6772c;
+  color: white;
+  border: medium none;
+  outline: medium none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  padding: 6px 18px;
+  text-transform: uppercase; }
+#appointment .firstSection .row .inputs .appointments fieldset .form-group .input-group {
+  width: 100%; }
+#appointment .firstSection .row .inputs .appointments .nms {
+  float: left;
+  color: #6e868c;
+  font-size: 13.5px;
+  font-weight: normal;
+  padding-top: 4px; }
+#appointment .firstSection .row .inputs .appointments .maNotification {
+  position: initial;
+  color: black;
+  font-size: 16px;
+  padding: 0;
+  text-transform: capitalize; }
+
+/*# sourceMappingURL=appointment.css.map */

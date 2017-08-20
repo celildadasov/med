@@ -1,0 +1,350 @@
+#homePage .content .banner {
+  clear: both;
+  position: relative; }
+  #homePage .content .banner .bannerPic {
+    width: 100%;
+    height: 660px; }
+    #homePage .content .banner .bannerPic img {
+      width: 100%;
+      height: 660px; }
+  #homePage .content .banner .magnet {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    float: left; }
+    #homePage .content .banner .magnet h2 {
+      background: url(../img/under-line.png) bottom left no-repeat;
+      padding-bottom: 10px;
+      font-size: 15px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+      #homePage .content .banner .magnet h2 span {
+        font-size: 24px;
+        font-weight: 800; }
+    #homePage .content .banner .magnet .row .makeAppointment {
+      background: #78d0ee;
+      min-height: 266px;
+      padding: 35px 15px 36px 15px; }
+      #homePage .content .banner .magnet .row .makeAppointment .maParts {
+        width: 49%;
+        float: left;
+        margin: 0 2px; }
+        #homePage .content .banner .magnet .row .makeAppointment .maParts form input {
+          border: none;
+          outline: none;
+          font-size: 13px;
+          height: auto;
+          padding: 9px 15px;
+          margin: 2px 0;
+          width: 100%;
+          color: #91a8ae; }
+          #homePage .content .banner .magnet .row .makeAppointment .maParts form input::placeholder {
+            color: #91a8ae; }
+        #homePage .content .banner .magnet .row .makeAppointment .maParts .maDate .form-group {
+          margin: 0; }
+          #homePage .content .banner .magnet .row .makeAppointment .maParts .maDate .form-group .input-group {
+            width: 100%; }
+            #homePage .content .banner .magnet .row .makeAppointment .maParts .maDate .form-group .input-group .input-group-addon {
+              top: -2px; }
+        #homePage .content .banner .magnet .row .makeAppointment .maParts .maComment {
+          position: relative;
+          width: 100%;
+          float: left; }
+          #homePage .content .banner .magnet .row .makeAppointment .maParts .maComment form textarea {
+            width: 100%;
+            height: 78px;
+            resize: none;
+            border: medium none;
+            outline: medium none;
+            color: #91a8ae;
+            float: left;
+            font-size: 13px;
+            margin: 2px 0;
+            padding: 9px 15px; }
+          #homePage .content .banner .magnet .row .makeAppointment .maParts .maComment button {
+            text-transform: uppercase;
+            background: #f6772c;
+            font-size: 13px;
+            font-weight: 700;
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            position: absolute;
+            bottom: 3px;
+            right: 1px; }
+    #homePage .content .banner .magnet .row .workingTimes {
+      background: #f8da73;
+      padding: 35px 15px 10px 15px;
+      min-height: 266px; }
+      #homePage .content .banner .magnet .row .workingTimes .wtDetails {
+        width: 29%;
+        float: left;
+        background: url(../img/line.png) right top repeat-y;
+        min-height: 125px; }
+        #homePage .content .banner .magnet .row .workingTimes .wtDetails p {
+          font-size: 13px;
+          color: #685e3b;
+          line-height: 22px; }
+          #homePage .content .banner .magnet .row .workingTimes .wtDetails p span {
+            display: block;
+            color: #383d48;
+            font-weight: bold; }
+      #homePage .content .banner .magnet .row .workingTimes .wtDescription {
+        float: left;
+        width: 67%;
+        padding-left: 28px; }
+        #homePage .content .banner .magnet .row .workingTimes .wtDescription p {
+          font-size: 13px;
+          color: #84784c;
+          line-height: 22px; }
+        #homePage .content .banner .magnet .row .workingTimes .wtDescription a {
+          font-size: 13px;
+          background: #f6772c url(../img/but-ar.png) 90% center no-repeat;
+          color: white;
+          font-weight: bold;
+          border: none;
+          border-radius: 2px;
+          width: 142px;
+          padding: 7px 17px 9px 17px;
+          text-align: left;
+          text-transform: uppercase;
+          margin: 24px 0;
+          float: left; }
+#homePage .content .updatesDoctors {
+  width: 100%;
+  float: left;
+  background: #f0f8ff;
+  padding: 63px 0; }
+  #homePage .content .updatesDoctors .container .row .newsDocDirections a {
+    height: 14px;
+    margin: 2px 0 0;
+    position: absolute;
+    top: 23px;
+    width: 8px; }
+    #homePage .content .updatesDoctors .container .row .newsDocDirections a:first-child {
+      background: url(../img/left-arrow.png) no-repeat;
+      right: 28px; }
+    #homePage .content .updatesDoctors .container .row .newsDocDirections a:last-child {
+      background: url(../img/right-arrow.png) no-repeat;
+      right: 14px; }
+  #homePage .content .updatesDoctors .container .row .newsSide {
+    position: relative; }
+    #homePage .content .updatesDoctors .container .row .newsSide .news {
+      float: left; }
+      #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper {
+        max-width: 100%;
+        margin: 0 auto; }
+        #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport {
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          height: 363px; }
+          #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast {
+            width: auto;
+            position: relative;
+            transform: translate3d(0px, -335px, 0px);
+            list-style: outside none none;
+            padding-left: 0; }
+            #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li {
+              float: none;
+              position: relative;
+              border-bottom: 1px dotted #cbdceb;
+              padding: 28px 0;
+              top: 360px;
+              width: 100% !important; }
+              #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li .newsDate {
+                background: none;
+                border: 2px solid #000;
+                color: #000;
+                float: left;
+                font-size: 14px;
+                line-height: 1.1;
+                height: 68px;
+                width: 68px;
+                padding-top: 10px;
+                text-align: center; }
+                #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li .newsDate span {
+                  font-size: 30px;
+                  font-weight: 800; }
+              #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li .newsText {
+                padding-left: 100px; }
+                #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li .newsText h2 {
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 13.5px;
+                  color: #383d48;
+                  text-transform: uppercase;
+                  font-weight: 800;
+                  padding-bottom: 12px; }
+                #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li .newsText p {
+                  color: #6e868c;
+                  padding: 0;
+                  font-size: 13.5px; }
+              #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li:first-child {
+                padding-top: 0; }
+  #homePage .content .updatesDoctors .container .row .ourDoctors {
+    position: relative; }
+    #homePage .content .updatesDoctors .container .row .ourDoctors h2 {
+      padding-left: 15px; }
+    #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper {
+      max-width: 100%;
+      margin: 0 auto; }
+      #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort {
+        width: 100%;
+        height: 352px;
+        overflow: hidden;
+        position: relative; }
+        #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide {
+          position: relative;
+          width: auto;
+          width: 415%; }
+          #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li {
+            width: 750px;
+            float: left;
+            position: relative;
+            left: 0; }
+            #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 {
+              padding-right: 0;
+              margin-bottom: 15px;
+              float: left; }
+              #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox {
+                background: white;
+                border: 1px solid #dceaf6;
+                min-height: 161px;
+                position: relative; }
+                #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docPics {
+                  width: 153px;
+                  height: 159px;
+                  float: left; }
+                #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docName {
+                  float: left;
+                  width: 204px;
+                  padding: 45px 0px 53px 25px; }
+                  #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docName h2 {
+                    color: #6e868c;
+                    font-size: 12.99px;
+                    font-family: "Open Sans",sans-serif;
+                    padding-left: 0; }
+                    #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docName h2 span {
+                      color: #383d48;
+                      font-size: 13.48px;
+                      font-family: 'Raleway', sans-serif;
+                      text-transform: uppercase;
+                      padding-bottom: 3px;
+                      display: block;
+                      font-weight: 800; }
+                #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docSocialMedia {
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                  border-top: 1px solid #dceaf6;
+                  width: 204px;
+                  height: 29px;
+                  float: left; }
+                  #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docSocialMedia a {
+                    padding: 4px 10px 6px;
+                    border-right: 1px solid #dceaf6;
+                    font-size: 13.5px;
+                    color: #383d48; }
+                    #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docSocialMedia a:first-child {
+                      padding-left: 25px !important; }
+                    #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docSocialMedia a:last-child {
+                      border-color: transparent; }
+#homePage .content .historyDepartments {
+  width: 100%;
+  background: white;
+  float: left;
+  padding: 63px 0; }
+  #homePage .content .historyDepartments .history p {
+    color: #4c6880;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 20px 0; }
+  #homePage .content .historyDepartments .history a {
+    background-position: right 16px;
+    color: #383d48;
+    font-size: 13.5px;
+    padding: 10px 10px 0 0; }
+  #homePage .content .historyDepartments .department .dept {
+    border: 1px solid #dceaf6;
+    float: left;
+    width: 100%; }
+    #homePage .content .historyDepartments .department .dept .depAccordion li {
+      width: 100%;
+      float: left; }
+      #homePage .content .historyDepartments .department .dept .depAccordion li:nth-child(2) {
+        border-top: solid 1px #dceaf6;
+        background: white; }
+      #homePage .content .historyDepartments .department .dept .depAccordion li h3 {
+        font-size: 12.5px;
+        color: #383d48;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 9px 17px;
+        width: 100%;
+        cursor: pointer; }
+        #homePage .content .historyDepartments .department .dept .depAccordion li h3 img {
+          padding-right: 10px; }
+        #homePage .content .historyDepartments .department .dept .depAccordion li h3 span {
+          font-size: 12.5px;
+          color: #383d48;
+          font-weight: 700;
+          text-transform: uppercase; }
+      #homePage .content .historyDepartments .department .dept .depAccordion li #panel1, #homePage .content .historyDepartments .department .dept .depAccordion li #panel2 {
+        display: block; }
+        #homePage .content .historyDepartments .department .dept .depAccordion li #panel1 img, #homePage .content .historyDepartments .department .dept .depAccordion li #panel2 img {
+          float: left;
+          padding-right: 10px; }
+        #homePage .content .historyDepartments .department .dept .depAccordion li #panel1 p, #homePage .content .historyDepartments .department .dept .depAccordion li #panel2 p {
+          color: #4c6880;
+          font-size: 13px;
+          padding-bottom: 10px; }
+        #homePage .content .historyDepartments .department .dept .depAccordion li #panel1 a, #homePage .content .historyDepartments .department .dept .depAccordion li #panel2 a {
+          font-size: 13.5px;
+          color: #383d48;
+          padding: 0 10px 0 0;
+          margin: 0; }
+      #homePage .content .historyDepartments .department .dept .depAccordion li #panel2 {
+        height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-color: transparent; }
+  #homePage .content .historyDepartments .department .bg {
+    display: inline-block;
+    margin-top: 33px;
+    font-size: 13.5px;
+    color: #383d48;
+    padding: 0 10px 0 0; }
+#homePage .services {
+  width: 100%;
+  float: left;
+  background: #f0f8ff; }
+  #homePage .services .col-md-3 .serviceBox {
+    border: 1px solid #e6ebf4;
+    margin: 15px 0;
+    min-height: 280px;
+    padding: 25px; }
+    #homePage .services .col-md-3 .serviceBox h2 {
+      margin-top: 20px;
+      margin-bottom: 9px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #383d48;
+      text-transform: uppercase; }
+    #homePage .services .col-md-3 .serviceBox p {
+      color: #6e868c;
+      font-size: 13.5px;
+      line-height: 24px;
+      margin-bottom: 50px; }
+    #homePage .services .col-md-3 .serviceBox a {
+      color: #6e868c;
+      font-size: 13.5px;
+      padding: 0 10px 0 0; }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,95 @@
+    #aboutUs {
+        .history {
+            clear: both;
+            .col-sm-8 {
+                h2 {
+                    font-size: 24px;
+                }
+                p {
+                    font-size: 13px;
+                    color: #4c6880;
+                    line-height: 22px;
+                }
+            }
+            .col-sm-4 {
+                position: relative;
+                div:first-child {
+                    img {
+                        float: right;
+                    }
+                }
+                div:nth-child(2) {
+                    img {
+                        position: absolute;
+                        top: 113px;
+                    }
+                }
+            }
+        }
+        .departmentSection {
+            clear: both;
+            padding: 60px 0;
+            .container {
+                .row {
+                    .depAccordion {
+                        padding: 0;
+                        .col-sm-6 {
+                            width: 50%;
+                            border: none;
+                            ul {
+                                li {
+                                    width: 100%;
+                                    float: left;
+                                    h3 {
+                                        border: solid 1px #dceaf6;
+                                        border-bottom: none;
+                                        background-color: #f0f8ff !important;
+                                        cursor: pointer;
+                                        font-size: 12.5px;
+                                        color: #383d48;
+                                        font-weight: 700;
+                                        text-transform: uppercase;
+                                        padding: 9px 17px;
+                                        width: 100%;
+                                    }
+                                    #down1 {
+                                        background-color: rgb(240, 248, 255);
+                                        padding: 28px 15px;
+                                        display: block;
+                                        border-top: 1px solid #dceaf6;
+                                    }
+                                    #down2 {
+                                        display: block;
+                                        height: 0;
+                                        padding-top: 0;
+                                        padding-bottom: 0;
+                                    }
+                                    #down1,
+                                    #down2 {
+                                        float: left;
+                                        width: 100%;
+                                        img {
+                                            padding-right: 10px;
+                                            float: left;
+                                            width: 198px;
+                                            height: 104px;
+                                        }
+                                        p {
+                                            color: #4c6880;
+                                            font-size: 13px;
+                                            padding-bottom: 10px;
+                                        }
+                                    }
+                                }
+                                li:last-child {
+                                    h3 {
+                                        border-bottom: 1px solid #dceaf6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

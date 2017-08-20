@@ -1,0 +1,30 @@
+
+#timetable{
+
+    .doc{
+        h3{
+            font-size: 13px;
+            color: #000;
+            font-weight: normal;
+            background: #ffe073;
+            text-align: center;
+            padding: 16px 0;
+            clear: left;
+            text-transform: uppercase;
+
+        }
+
+        .h3active{
+            background: #6acff0;
+            color: white;
+
+        }
+    }
+
+    .doc:hover{
+        h3{
+            background: #6acff0;
+            color: white;
+        }
+    }
+}

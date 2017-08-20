@@ -1,0 +1,515 @@
+#homePage{
+
+    .content{
+        .banner{
+            clear: both;
+            position: relative;
+            .bannerPic{
+                width: 100%;
+                height: 660px;
+                
+                img{
+                    width: 100%;
+                    height: 660px;
+                    
+                    }
+                }
+
+                .magnet{
+                    position: absolute;
+                    bottom: 30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 100%;
+                    float: left;
+
+                    h2{
+                    background: url(../img/under-line.png) bottom left no-repeat;
+                    padding-bottom: 10px;
+                    font-size: 15px;
+                    font-family: "Raleway", sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    span{
+                        font-size: 24px;
+                        font-weight: 800;
+                            }
+                        }
+
+
+                    .row{
+                        .makeAppointment{
+                            background: #78d0ee;
+                            min-height: 266px;
+                            padding: 35px 15px 36px 15px;
+
+
+                                    .maParts{
+                                        width: 49%;
+                                        float: left;
+                                        margin: 0 2px;
+                                        form{
+                                            input{
+                                                border: none;
+                                                outline: none;
+                                                font-size: 13px;
+                                                height: auto;
+                                                padding: 9px 15px;
+                                                margin: 2px 0;
+                                                width: 100%;
+                                                color: #91a8ae;
+                                                &::placeholder{
+                                                    color: #91a8ae;
+                                                    }
+                                                }
+                                            }
+
+                                            .maDate{
+                                                .form-group{
+                                                    margin: 0;
+                                                    .input-group{
+                                                        width: 100%;
+                                                        .input-group-addon{
+                                                            top: -2px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                            .maComment{
+                                                position: relative;
+                                                width: 100%;
+                                                float: left;
+                                                form{
+                                                    textarea{
+                                                        width: 100%;
+                                                        height: 78px;
+                                                        resize: none;
+                                                        border: medium none;
+                                                        outline: medium none;
+                                                        color: #91a8ae;
+                                                        float: left;
+                                                        font-size: 13px;
+                                                        margin: 2px 0;
+                                                        padding: 9px 15px;
+                                                        }
+                                                    }
+
+                                                    button{
+                                                        text-transform: uppercase;
+                                                        background: #f6772c;
+                                                        font-size: 13px;
+                                                        font-weight: 700;
+                                                        color: white;
+                                                        outline: none;
+                                                        border: none;
+                                                        border-radius: 2px;
+                                                        position: absolute;
+                                                        bottom: 3px;
+                                                        right: 1px;
+                                                    }
+                                                }
+
+
+                                        }
+                            }
+
+                            .workingTimes{
+                                background: #f8da73;
+                                padding: 35px 15px 10px 15px;
+                                min-height: 266px;
+
+                                .wtDetails{
+                                    width: 29%;
+                                    float: left;
+                                    background: url(../img/line.png) right top repeat-y;
+                                    min-height: 125px;
+                                    p{
+                                        font-size: 13px;
+                                        color: #685e3b;
+                                        line-height: 22px;
+                                        span{
+                                            display: block;
+                                            color: #383d48;
+                                            font-weight: bold;
+
+                                            }
+                                        }
+                                    }
+
+                                    .wtDescription{
+                                        float: left;
+                                        width: 67%;
+                                        padding-left: 28px;
+                                        p{
+                                            font-size: 13px;
+                                            color: #84784c;
+                                            line-height: 22px;
+                                            }
+
+                                            a{
+                                                font-size: 13px;
+                                                background: #f6772c url(../img/but-ar.png) 90% center no-repeat;
+                                                color: white;
+                                                font-weight: bold;
+                                                border: none;
+                                                border-radius: 2px;
+                                                width: 142px;
+                                                padding: 7px 17px 9px 17px;
+                                                text-align: left;
+                                                text-transform: uppercase;
+                                                margin: 24px 0;
+                                                float: left;
+                                                }
+                                        }
+                                }
+                        }
+                    }
+                }
+
+
+
+        .updatesDoctors{
+            width: 100%;
+            float: left;
+            background: #f0f8ff;
+            padding: 63px 0;
+            .container{
+                .row{
+
+                    .newsDocDirections{
+                        a{
+                            height: 14px;
+                            margin: 2px 0 0;
+                            position: absolute;
+                            top: 23px;
+                            width: 8px;
+                            &:first-child{
+                                background: url(../img/left-arrow.png) no-repeat;
+                                right:28px;
+                                }
+                                &:last-child{
+                                    background: url(../img/right-arrow.png) no-repeat;
+                                    right: 14px;
+                                    }
+                            }
+                        }
+
+                    .newsSide{
+                        position: relative;
+                            .news{
+                                float: left;
+                                .updatesWrapper{
+                                    max-width: 100%;
+                                    margin: 0 auto;
+                                    .updatesViewport{
+                                        width: 100%;
+                                        position: relative;
+                                        overflow: hidden;
+                                        height: 363px;
+                                        .disast{
+                                            width: auto;
+                                            position: relative;
+                                            transform: translate3d(0px, -335px, 0px);
+                                            list-style: outside none none;
+                                            padding-left: 0;
+                                            li{
+                                                float: none;
+                                                position: relative;
+                                                border-bottom: 1px dotted #cbdceb;
+                                                padding: 28px 0;
+                                                top: 360px;
+                                                width: 100% !important;
+                                                .newsDate{
+                                                    background: none;
+                                                    border: 2px solid #000;
+                                                    color: #000;
+                                                    float: left;
+                                                    font-size: 14px;
+                                                    line-height: 1.1;
+                                                    height: 68px;
+                                                    width: 68px;
+                                                    padding-top: 10px;
+                                                    text-align: center;
+                                                    span{
+                                                        font-size: 30px;
+                                                        font-weight: 800;
+                                                        }
+                                                    }
+
+                                                    .newsText{
+                                                        padding-left: 100px;
+                                                        h2{
+                                                            font-family: 'Raleway', sans-serif;
+                                                            font-size: 13.5px;
+                                                            color: #383d48;
+                                                            text-transform: uppercase;
+                                                            font-weight: 800;
+                                                            padding-bottom:12px;
+                                                            }
+
+                                                            p{
+                                                                color: #6e868c;
+                                                                padding: 0;
+                                                                font-size: 13.5px;
+                                                            }
+                                                        }
+                                                        
+                                                        &:first-child{
+                                                            padding-top: 0;
+                                                        }
+                                                }
+                                            }
+                                        }
+
+                                        
+                                    }
+                                }
+                        }
+
+                        .ourDoctors{
+                            position: relative;
+                            h2{
+                                padding-left: 15px;
+                                }
+
+                                .allDoctors{
+                                    .docWrapper{
+                                        max-width: 100%;
+                                        margin: 0 auto;
+                                        .docViewPort{
+                                            width: 100%;
+                                            height: 352px;
+                                            overflow: hidden;
+                                            position: relative;
+
+                                            .docSlide{
+                                                position: relative;
+                                                width: auto;
+                                                width: 415%;
+                                                li{
+                                                    width: 750px;
+                                                    float: left;
+                                                    position: relative;
+                                                    left: 0;
+                                                    .col-sm-6{
+                                                        padding-right: 0;
+                                                        margin-bottom: 15px;
+                                                        float: left;
+                                                        .whiteBox{
+                                                            background: white;
+                                                            border: 1px solid #dceaf6;
+                                                            min-height: 161px;
+                                                            position: relative;
+                                                            .docPics{
+                                                                width: 153px;
+                                                                height: 159px;
+                                                                float: left;
+                                                                }
+
+                                                                .docName{
+                                                                    float: left;
+                                                                    width: 204px;
+                                                                    padding: 45px 0px 53px 25px;
+                                                                    h2{
+                                                                        color: #6e868c;
+                                                                        font-size: 12.99px;
+                                                                        font-family: "Open Sans",sans-serif;
+                                                                        padding-left: 0;
+                                                                        span{
+                                                                            color: #383d48;
+                                                                            font-size: 13.48px;
+                                                                            font-family: 'Raleway', sans-serif;
+                                                                            text-transform: uppercase;
+                                                                            padding-bottom: 3px;
+                                                                            display: block;
+                                                                            font-weight: 800;
+                                                                            }
+                                                                        }
+                                                                    }
+
+                                                                    .docSocialMedia{
+                                                                        position: absolute;
+                                                                        bottom: 0;
+                                                                        right: 0;
+                                                                        border-top: 1px solid #dceaf6;
+                                                                        width: 204px;
+                                                                        height: 29px;
+                                                                        float: left;
+                                                                        a{
+                                                                            padding: 4px 10px 6px;
+                                                                            border-right: 1px solid #dceaf6;
+                                                                            font-size: 13.5px;
+                                                                            color: #383d48;
+                                                                            img{
+
+                                                                                }
+                                                                            &:first-child{
+                                                                                padding-left: 25px !important;
+                                                                            }
+
+                                                                            &:last-child{
+                                                                                border-color: transparent;
+
+                                                                                }
+                                                                            }
+                                                                        }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                            }
+                    }
+                }
+        }   
+        
+        .historyDepartments{
+            width: 100%;
+            background: white;
+            float: left;
+            padding: 63px 0;
+
+            .history{
+
+                    p{
+                        color: #4c6880;
+                        font-size: 13px;
+                        line-height: 22px;
+                        padding: 20px 0;
+                        }
+
+                        a{
+                            background-position: right 16px;
+                            color: #383d48;
+                            font-size: 13.5px;
+                            padding: 10px 10px 0 0;
+                            
+                            }
+                }
+
+                
+           
+            .department{
+                .dept{
+                    border: 1px solid #dceaf6;
+                    float: left;
+                    width: 100%;
+                    .depAccordion{
+                        li{
+                            width: 100%;
+                            float: left;
+                            &:nth-child(2){
+                                border-top: solid 1px #dceaf6;
+                                background: white;
+                                }
+
+
+
+                                h3{
+                                    font-size: 12.5px;
+                                    color: #383d48;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    padding: 9px 17px;
+                                    width: 100%;
+                                    cursor: pointer;
+                                    img{
+                                        padding-right: 10px;
+                                        }
+
+                                        span{
+                                            font-size: 12.5px;
+                                    color: #383d48;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                            }
+                                    }
+
+                                    #panel1, #panel2{
+                                        
+                                        display: block;
+                                        img{
+                                            float: left;
+                                            padding-right: 10px;
+                                            }
+
+                                            p{
+                                                color: #4c6880;
+                                                font-size: 13px;
+                                                padding-bottom: 10px;
+                                                }
+
+                                                a{
+                                                    font-size: 13.5px;
+                                                    color: #383d48;
+                                                    padding: 0 10px 0 0;
+                                                    margin: 0;
+                                                    }
+                                        }
+
+                                        #panel2{
+                                            height: 0;
+                                            padding-top: 0;
+                                            padding-bottom: 0;
+                                            border-color:transparent
+                                            }
+                            }
+                        }
+                    }
+
+                    .bg{
+                        display: inline-block;
+                        margin-top: 33px;
+                        font-size: 13.5px;
+                        color: #383d48;
+                        padding: 0 10px 0 0;
+                        }
+                }
+            }
+
+
+        
+        }
+
+        .services{ 
+            width: 100%;
+            float: left;
+            background: #f0f8ff;
+            .col-md-3{
+                .serviceBox{
+                    border: 1px solid #e6ebf4;
+                    margin: 15px 0;
+                    min-height: 280px;
+                    padding: 25px;
+                    h2{
+                        margin-top: 20px;
+                        margin-bottom: 9px;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 13.5px;
+                        font-weight: 800;
+                        color: #383d48;
+                        text-transform: uppercase;
+                        }
+
+                        p{
+                            color: #6e868c;
+                            font-size: 13.5px;
+                            line-height: 24px;
+                            margin-bottom: 50px;
+                            }
+
+                            a{
+                                color: #6e868c;
+                                font-size: 13.5px;
+                                padding: 0 10px 0 0;
+                                }
+                    }
+                }
+        }
+
+    }

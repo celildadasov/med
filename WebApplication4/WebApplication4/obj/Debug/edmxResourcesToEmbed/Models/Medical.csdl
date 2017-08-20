@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Medical_ThemeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Appoinment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="departmentCountry_id" Type="Int32" />
+    <Property Name="surname" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="phone" Type="Int32" Nullable="false" />
+    <Property Name="date_birth" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="appo_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="gender" Type="Int32" Nullable="false" />
+    <Property Name="message" Type="String" MaxLength="1000" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="departmentCountry" Relationship="Self.FK_Appoinment_departmentCountry" FromRole="Appoinment" ToRole="departmentCountry" />
+    <NavigationProperty Name="feedbacks" Relationship="Self.FK_feedback_Appoinment" FromRole="Appoinment" ToRole="feedback" />
+  </EntityType>
+  <EntityType Name="author">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="blogs" Relationship="Self.FK_blog_author" FromRole="author" ToRole="blog" />
+    <NavigationProperty Name="news" Relationship="Self.FK_news_author1" FromRole="author" ToRole="news" />
+  </EntityType>
+  <EntityType Name="blog">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="blog_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="blog_author" Type="Int32" Nullable="false" />
+    <Property Name="blog_tags" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="blog_text" Type="String" MaxLength="350" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="blog_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="blog_img" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="blog_category" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="author" Relationship="Self.FK_blog_author" FromRole="blog" ToRole="author" />
+    <NavigationProperty Name="category" Relationship="Self.FK_blog_categories" FromRole="blog" ToRole="categories" />
+  </EntityType>
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="category_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="blogs" Relationship="Self.FK_blog_categories" FromRole="categories" ToRole="blog" />
+    <NavigationProperty Name="news" Relationship="Self.FK_news_categories" FromRole="categories" ToRole="news" />
+  </EntityType>
+  <EntityType Name="comment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phone" Type="Int32" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="comments" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contact_us">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phone" Type="Int32" Nullable="false" />
+    <Property Name="comment" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="departDoctor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="department_id" Type="Int32" Nullable="false" />
+    <Property Name="doctor_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Department" Relationship="Self.FK_departDoctor_Department" FromRole="departDoctor" ToRole="Department" />
+    <NavigationProperty Name="Doctor" Relationship="Self.FK_departDoctor_Doctors" FromRole="departDoctor" ToRole="Doctors" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="department_about" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="department_image" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="department_icon" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="departDoctors" Relationship="Self.FK_departDoctor_Department" FromRole="Department" ToRole="departDoctor" />
+  </EntityType>
+  <EntityType Name="departmentCountry">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="country_name" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Appoinments" Relationship="Self.FK_Appoinment_departmentCountry" FromRole="departmentCountry" ToRole="Appoinment" />
+  </EntityType>
+  <EntityType Name="Doctor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="surname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="speciality" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="gender" Type="Int32" Nullable="false" />
+    <Property Name="facebook_adress" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="twitter_adress" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="google_adress" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="departDoctors" Relationship="Self.FK_departDoctor_Doctors" FromRole="Doctors" ToRole="departDoctor" />
+    <NavigationProperty Name="worktimes" Relationship="Self.FK_worktime_Doctors" FromRole="Doctors" ToRole="worktime" />
+  </EntityType>
+  <EntityType Name="feedback">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="patient_feedback" Type="String" MaxLength="500" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="patient_id" Type="Int32" Nullable="false" />
+    <Property Name="image" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Appoinment" Relationship="Self.FK_feedback_Appoinment" FromRole="feedback" ToRole="Appoinment" />
+  </EntityType>
+  <EntityType Name="news">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="news_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="news_author" Type="Int32" Nullable="false" />
+    <Property Name="news_text" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="news_img" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="news_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="news_category" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="author" Relationship="Self.FK_news_author1" FromRole="news" ToRole="author" />
+    <NavigationProperty Name="category" Relationship="Self.FK_news_categories" FromRole="news" ToRole="categories" />
+  </EntityType>
+  <EntityType Name="Service">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="text" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="image" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="worktime">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="doctor_id" Type="Int32" Nullable="false" />
+    <Property Name="begin_time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="end_time" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Doctor" Relationship="Self.FK_worktime_Doctors" FromRole="worktime" ToRole="Doctors" />
+  </EntityType>
+  <Association Name="FK_Appoinment_departmentCountry">
+    <End Role="departmentCountry" Type="Self.departmentCountry" Multiplicity="0..1" />
+    <End Role="Appoinment" Type="Self.Appoinment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="departmentCountry">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Appoinment">
+        <PropertyRef Name="departmentCountry_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_feedback_Appoinment">
+    <End Role="Appoinment" Type="Self.Appoinment" Multiplicity="1" />
+    <End Role="feedback" Type="Self.feedback" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appoinment">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="feedback">
+        <PropertyRef Name="patient_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_blog_author">
+    <End Role="author" Type="Self.author" Multiplicity="1" />
+    <End Role="blog" Type="Self.blog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="author">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="blog">
+        <PropertyRef Name="blog_author" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_news_author1">
+    <End Role="author" Type="Self.author" Multiplicity="1" />
+    <End Role="news" Type="Self.news" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="author">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="news">
+        <PropertyRef Name="news_author" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_blog_categories">
+    <End Role="categories" Type="Self.category" Multiplicity="1" />
+    <End Role="blog" Type="Self.blog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categories">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="blog">
+        <PropertyRef Name="blog_category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_news_categories">
+    <End Role="categories" Type="Self.category" Multiplicity="1" />
+    <End Role="news" Type="Self.news" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categories">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="news">
+        <PropertyRef Name="news_category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_departDoctor_Department">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="departDoctor" Type="Self.departDoctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="departDoctor">
+        <PropertyRef Name="doctor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_departDoctor_Doctors">
+    <End Role="Doctors" Type="Self.Doctor" Multiplicity="1" />
+    <End Role="departDoctor" Type="Self.departDoctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Doctors">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="departDoctor">
+        <PropertyRef Name="doctor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_worktime_Doctors">
+    <End Role="Doctors" Type="Self.Doctor" Multiplicity="1" />
+    <End Role="worktime" Type="Self.worktime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Doctors">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="worktime">
+        <PropertyRef Name="doctor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Medical_ThemeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Appoinments" EntityType="Self.Appoinment" />
+    <EntitySet Name="authors" EntityType="Self.author" />
+    <EntitySet Name="blogs" EntityType="Self.blog" />
+    <EntitySet Name="categories" EntityType="Self.category" />
+    <EntitySet Name="comments" EntityType="Self.comment" />
+    <EntitySet Name="Contact_us" EntityType="Self.Contact_us" />
+    <EntitySet Name="departDoctors" EntityType="Self.departDoctor" />
+    <EntitySet Name="Departments" EntityType="Self.Department" />
+    <EntitySet Name="departmentCountries" EntityType="Self.departmentCountry" />
+    <EntitySet Name="Doctors" EntityType="Self.Doctor" />
+    <EntitySet Name="feedbacks" EntityType="Self.feedback" />
+    <EntitySet Name="news" EntityType="Self.news" />
+    <EntitySet Name="Services" EntityType="Self.Service" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="worktimes" EntityType="Self.worktime" />
+    <AssociationSet Name="FK_Appoinment_departmentCountry" Association="Self.FK_Appoinment_departmentCountry">
+      <End Role="departmentCountry" EntitySet="departmentCountries" />
+      <End Role="Appoinment" EntitySet="Appoinments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_feedback_Appoinment" Association="Self.FK_feedback_Appoinment">
+      <End Role="Appoinment" EntitySet="Appoinments" />
+      <End Role="feedback" EntitySet="feedbacks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_blog_author" Association="Self.FK_blog_author">
+      <End Role="author" EntitySet="authors" />
+      <End Role="blog" EntitySet="blogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_news_author1" Association="Self.FK_news_author1">
+      <End Role="author" EntitySet="authors" />
+      <End Role="news" EntitySet="news" />
+    </AssociationSet>
+    <AssociationSet Name="FK_blog_categories" Association="Self.FK_blog_categories">
+      <End Role="categories" EntitySet="categories" />
+      <End Role="blog" EntitySet="blogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_news_categories" Association="Self.FK_news_categories">
+      <End Role="categories" EntitySet="categories" />
+      <End Role="news" EntitySet="news" />
+    </AssociationSet>
+    <AssociationSet Name="FK_departDoctor_Department" Association="Self.FK_departDoctor_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="departDoctor" EntitySet="departDoctors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_departDoctor_Doctors" Association="Self.FK_departDoctor_Doctors">
+      <End Role="Doctors" EntitySet="Doctors" />
+      <End Role="departDoctor" EntitySet="departDoctors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_worktime_Doctors" Association="Self.FK_worktime_Doctors">
+      <End Role="Doctors" EntitySet="Doctors" />
+      <End Role="worktime" EntitySet="worktimes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

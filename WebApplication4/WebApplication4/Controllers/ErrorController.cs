@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using WebApplication4.Models;
+
+
+namespace WebApplication4.Controllers
+{
+    public class ErrorController : Controller
+    {
+        Medical_ThemeEntities mt = new Medical_ThemeEntities();
+
+        // GET: Error
+        public ActionResult Index()
+        {
+
+            return View();
+        }
+    }
+}

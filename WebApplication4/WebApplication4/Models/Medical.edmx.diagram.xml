@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="14ac7dc77a5042f2bf6de51dbb698189" Name="Diagram1">
+        <EntityTypeShape EntityType="Medical_ThemeModel.Appoinment" Width="1.5" PointX="8" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.author" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.blog" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.category" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.comment" Width="1.5" PointX="8.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.Contact_us" Width="1.5" PointX="8.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.departDoctor" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.Department" Width="1.5" PointX="0.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.departmentCountry" Width="1.5" PointX="5.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.Doctor" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.feedback" Width="1.5" PointX="10.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.news" Width="1.5" PointX="6" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.Service" Width="1.5" PointX="10.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.sysdiagram" Width="1.5" PointX="10.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medical_ThemeModel.worktime" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <AssociationConnector Association="Medical_ThemeModel.FK_Appoinment_departmentCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="Medical_ThemeModel.FK_feedback_Appoinment" ManuallyRouted="false" />
+        <AssociationConnector Association="Medical_ThemeModel.FK_blog_author" ManuallyRouted="false" />
+        <AssociationConnector Association="Medical_ThemeModel.FK_news_author1" ManuallyRouted="false" />
+        <AssociationConnector Association="Medical_ThemeModel.FK_blog_categories" ManuallyRouted="false" />
+        <AssociationConnector Association="Medical_ThemeModel.FK_news_categories" ManuallyRouted="false" />
+        <AssociationConnector Association="Medical_ThemeModel.FK_departDoctor_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Medical_ThemeModel.FK_departDoctor_Doctors" ManuallyRouted="false" />
+        <AssociationConnector Association="Medical_ThemeModel.FK_worktime_Doctors" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,45 @@
+    #blog{
+        .content{
+            clear: both;
+
+            .leftSection{
+
+                ul{
+                    li:nth-child(n+4){
+                        display: none;
+                    }
+                }
+
+                .pagerSection{
+                    float: right;
+                    margin-top: 25px;
+                    a{
+                        width: 33px;
+                        height: 33px;
+                        border: 1px solid #dce8f1;
+                        float: left;
+                        padding-top: 5.5px;
+                        text-align: center;
+                        font-size: 13.5px;
+                        color: #383d48;
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+
+                    .pLeft{
+                        background: url(../img/p-left.png) left top no-repeat;
+                        border: 1px solid #6acff0 !important;
+                    }
+
+                    .pRight{
+                        background: url(../img/p-right.png) left top no-repeat;
+                        border: 1px solid #6acff0 !important;
+                    }
+                }
+            }
+
+
+
+
+        }
+    }

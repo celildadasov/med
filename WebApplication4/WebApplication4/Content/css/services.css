@@ -1,0 +1,90 @@
+#services .firstSection .container .row .jst-cov {
+  float: left;
+  width: 100%;
+  padding-bottom: 15px; }
+#services .firstSection .container .row .service .service-box {
+  float: left;
+  min-height: 0;
+  padding: 37px 25px;
+  height: 300px; }
+  #services .firstSection .container .row .service .service-box img {
+    float: left;
+    padding-right: 28px; }
+  #services .firstSection .container .row .service .service-box .lib {
+    float: left;
+    width: 80%; }
+  #services .firstSection .container .row .service .service-box h2 {
+    margin-top: 2px; }
+  #services .firstSection .container .row .service .service-box p {
+    margin-bottom: 0;
+    line-height: 24px;
+    font-size: 13.5px; }
+#services .happyClients {
+  padding: 50px 0;
+  float: left;
+  background: #f0f8ff;
+  width: 100%; }
+  #services .happyClients .slider-cover {
+    width: 100%;
+    float: left;
+    position: relative; }
+    #services .happyClients .slider-cover .bx-wrapper {
+      max-width: 100%; }
+      #services .happyClients .slider-cover .bx-wrapper .bx-viewport {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 165px; }
+        #services .happyClients .slider-cover .bx-wrapper .bx-viewport .happy {
+          width: 615%;
+          position: relative;
+          transition-duration: 0s; }
+          #services .happyClients .slider-cover .bx-wrapper .bx-viewport .happy li {
+            float: left;
+            list-style: none;
+            left: 0;
+            position: relative;
+            width: 1170px;
+            margin: 2px; }
+            #services .happyClients .slider-cover .bx-wrapper .bx-viewport .happy li .small-let p {
+              font-size: 15px;
+              color: #6e868c;
+              font-family: "Lora", serif;
+              font-style: italic;
+              padding: 37px 0 8px 0;
+              background: url(../img/quote-l.png) left top no-repeat, url(../img/quote-r.png) bottom right no-repeat; }
+            #services .happyClients .slider-cover .bx-wrapper .bx-viewport .happy li .small-let h2 {
+              font-size: 13.5px;
+              color: #6e868c;
+              font-weight: normal;
+              text-transform: uppercase;
+              line-height: 25px;
+              padding-top: 5px; }
+              #services .happyClients .slider-cover .bx-wrapper .bx-viewport .happy li .small-let h2 span {
+                font-size: 13.5px;
+                color: #6e868c;
+                font-weight: 600;
+                display: block; }
+      #services .happyClients .slider-cover .bx-wrapper .bx-controls .bx-pager {
+        position: absolute;
+        right: 0;
+        top: 0; }
+        #services .happyClients .slider-cover .bx-wrapper .bx-controls .bx-pager .bx-pager-item {
+          float: left;
+          height: 14px;
+          width: 14px;
+          background: #dce8f1;
+          border-radius: 50%;
+          margin: 0 2px;
+          text-indent: 0px;
+          overflow: hidden;
+          cursor: pointer; }
+          #services .happyClients .slider-cover .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link,
+          #services .happyClients .slider-cover .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link:hover {
+            color: #dce8f1; }
+          #services .happyClients .slider-cover .bx-wrapper .bx-controls .bx-pager .bx-pager-item .active {
+            background: #ffe073;
+            color: #ffe073;
+            padding: 15px; }
+
+/*# sourceMappingURL=services.css.map */

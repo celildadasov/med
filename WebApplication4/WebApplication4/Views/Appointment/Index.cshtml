@@ -1,0 +1,154 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@using WebApplication4.Models;
+
+<div id="appointment">
+    <div class="innerBanner">
+        <img src="/Content/img/appointment.jpg" alt="">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <h2>Appointments</h2>
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--firstSection-->
+    <div class="firstSection sections">
+        <!--container-->
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <!--jstCover-->
+                <div class="col-sm-12 jstCover">
+                    <h2 class="tittle"><span>Make</span>Appointments</h2>
+                </div>
+                <!--/jstCover-->
+                <!--inputs-->
+                <div class="col-sm-12 inputs">
+                    <form action="/Appointment/Index" method="post">
+                        <!--appointments-->
+                        <div class="col-sm-6 appointments">
+                            <!--select-->
+                            <div class="select" onclick="selectDownFunction()">
+                                <a class="selectDown"></a>
+                                <a class="sbSelect">Select Department</a>
+                                <input id="departmentInput" type="hidden" name="department" value="" />
+                                <!--ul-->
+                                <ul class="selectOptions close">
+                                    @{
+                                        foreach (departmentCountry item in Model)
+                                        {
+                                            <li><a onclick="selectFunction(@item.id,this)">@item.country_name</a></li>
+
+                                        }
+                                    }
+                                </ul>
+                                <!--/ul-->
+                            </div>
+                            <!--/select-->
+                            <input type="text" name="last_name" placeholder="Last Name*" class="maInput">
+                            <input type="text" name="phone" placeholder="Phone*" class="maInput">
+                            <input type="date" name="birthday" placeholder="Date of birth" class="maInput">
+                        </div>
+                        <!--/appointments-->
+                        <!--appointments-->
+                        <div class="col-sm-6 appointments">
+                            <!--form-->
+                            <input type="text" name="fast_name" placeholder="Fast Name*" class="maInput">
+                            <input type="text" name="email" placeholder="Email*" class="maInput">
+                            <!--fieldset dateTimePicker üçün-->
+                            <fieldset>
+                                <div class="form-group">
+                                    <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                        <input type="text" name="Appoinmentdate" placeholder="Appointment date*" value="" readonly="" id="apdate" class="maInput">
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-th">
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <input type="hidden" name="date" id="dtp_input2" value="2017-06-01">
+
+                                </div>
+                            </fieldset>
+                            <!--/fieldset-->
+
+                            <label class="nms">Sex :</label>
+
+                            <!--squaredOne-->
+                            <div class="squaredOne">
+                                <input type="checkbox" name="check" value="0" id="squaredOne">
+                                <label for="squaredOne"></label>
+                            </div>
+                            <!--/squaredOne-->
+
+                            <label class="nms">Male</label>
+
+                            <!--squaredtwo-->
+                            <div class="squaredtwo">
+                                <input type="checkbox" value="1" id="squaredtwo" name="check">
+                                <label for="squaredtwo"></label>
+                            </div>
+                            <!--/squaredtwo-->
+
+                            <label class="nms">Female</label>
+
+                            <!--squadthree-->
+                            <div class="squaredthree">
+                                <input type="checkbox" value="2" id="squaredthree" name="check">
+                                <label for="squaredthree"></label>
+                            </div>
+                            <!--/squadthree-->
+
+                            <label class="nms">Child</label>
+                            <!--/form-->
+
+                        </div>
+                        <!--/appointments-->
+                        <!--appointments-->
+                        <div class="col-sm-12 appointments">
+                            <!--form-->
+                            <textarea name="message" placeholder="Message*"></textarea>
+                            <!--maNotification button'a click etdikdə ekrana bildiriş çıxarmaq üçün-->
+                            <div class="maNotification">
+                                <p></p>
+                            </div>
+                            <!--/maNotification-->
+                            <input type="submit" />
+
+                            <!--/form-->
+                        </div>
+                    </form>
+
+                </div>
+                <!--/inputs-->
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--/firstSection-->
+</div>
+
+@section script{ 
+<script type="text/javascript" src="/Content/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript">
+        "use strict";
+        $('.form_date').datetimepicker({
+            language: 'fr',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+</script>
+}
+

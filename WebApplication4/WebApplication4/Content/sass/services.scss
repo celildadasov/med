@@ -1,0 +1,121 @@
+#services {
+    .firstSection {
+        .container {
+            .row {
+                .jst-cov {
+                    float: left;
+                    width: 100%;
+                    padding-bottom: 15px;
+                }
+                .service {
+                    .service-box {
+                        float: left;
+                        min-height: 0;
+                        padding: 37px 25px;
+                        height: 300px;
+                        img {
+                            float: left;
+                            padding-right: 28px;
+                        }
+                        .lib {
+                            float: left;
+                            width: 80%;
+                        }
+                        h2 {
+                            margin-top: 2px;
+                        }
+                        p {
+                            margin-bottom: 0;
+                            line-height: 24px;
+                            font-size: 13.5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .happyClients {
+        padding: 50px 0;
+        float: left;
+        background: #f0f8ff;
+        width: 100%;
+        .slider-cover {
+            width: 100%;
+            float: left;
+            position: relative;
+            .bx-wrapper {
+                max-width: 100%;
+                .bx-viewport {
+                    width: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    height: 165px;
+                    .happy {
+                        width: 615%;
+                        position: relative;
+                        transition-duration: 0s;
+                        li {
+                            float: left;
+                            list-style: none;
+                            left: 0;
+                            position: relative;
+                            width: 1170px;
+                            margin: 2px;
+                            .small-let {
+                                p {
+                                    font-size: 15px;
+                                    color: #6e868c;
+                                    font-family: "Lora", serif;
+                                    font-style: italic;
+                                    padding: 37px 0 8px 0;
+                                    background: url(../img/quote-l.png) left top no-repeat, url(../img/quote-r.png) bottom right no-repeat;
+                                }
+                                h2 {
+                                    font-size: 13.5px;
+                                    color: #6e868c;
+                                    font-weight: normal;
+                                    text-transform: uppercase;
+                                    line-height: 25px;
+                                    padding-top: 5px;
+                                    span {
+                                        font-size: 13.5px;
+                                        color: #6e868c;
+                                        font-weight: 600;
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .bx-controls {
+                    .bx-pager {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        .bx-pager-item {
+                            float: left;
+                            height: 14px;
+                            width: 14px;
+                            background: #dce8f1;
+                            border-radius: 50%;
+                            margin: 0 2px;
+                            text-indent: 0px;
+                            overflow: hidden;
+                            cursor: pointer;
+                            .bx-pager-link,
+                            .bx-pager-link:hover {
+                                color: #dce8f1;
+                            }
+                            .active {
+                                background: #ffe073;
+                                color: #ffe073;
+                                padding: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

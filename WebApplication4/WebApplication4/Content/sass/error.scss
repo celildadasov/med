@@ -1,0 +1,41 @@
+#error404 {
+    .error-4 {
+        padding-top: 130px;
+        border-top: 1px solid rgb(85.9%, 92.2%, 96.1%);
+        padding-bottom: 140px;
+        h2 {
+            color: #383d48;
+            font-size: 18px;
+            line-height: 23px;
+            text-align: center;
+            span {
+                color: #9dacb8;
+                font-size: 13px;
+                display: block;
+                text-align: center;
+            }
+        }
+        .e4 {
+            font-size: 200px;
+            text-align: center;
+            font-weight: 900;
+            width: 100%;
+            p {
+                display: inline-block;
+                text-align: center;
+            }
+            p:nth-child(n+2) {
+                margin-left: -55px;
+            }
+            .color-comb1 {
+                color: #FFE073;
+            }
+            .color-comb2 {
+                color: #CDDA9C;
+            }
+            .color-comb3 {
+                color: #9BD4C6;
+            }
+        }
+    }
+}

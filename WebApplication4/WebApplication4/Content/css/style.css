@@ -1,0 +1,857 @@
+#homePage .content .banner {
+  clear: both;
+  position: relative; }
+  #homePage .content .banner .bannerPic {
+    width: 100%;
+    height: 660px; }
+    #homePage .content .banner .bannerPic img {
+      width: 100%;
+      height: 660px; }
+  #homePage .content .banner .magnet {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    float: left; }
+    #homePage .content .banner .magnet h2 {
+      background: url(../img/under-line.png) bottom left no-repeat;
+      padding-bottom: 10px;
+      font-size: 15px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+      #homePage .content .banner .magnet h2 span {
+        font-size: 24px;
+        font-weight: 800; }
+    #homePage .content .banner .magnet .row .makeAppointment {
+      background: #78d0ee;
+      min-height: 266px;
+      padding: 35px 15px 36px 15px; }
+      #homePage .content .banner .magnet .row .makeAppointment .maParts {
+        width: 49%;
+        float: left;
+        margin: 0 2px; }
+        #homePage .content .banner .magnet .row .makeAppointment .maParts form input {
+          border: none;
+          outline: none;
+          font-size: 13px;
+          height: auto;
+          padding: 9px 15px;
+          margin: 2px 0;
+          width: 100%;
+          color: #91a8ae; }
+          #homePage .content .banner .magnet .row .makeAppointment .maParts form input::placeholder {
+            color: #91a8ae; }
+        #homePage .content .banner .magnet .row .makeAppointment .maParts .maDate .form-group {
+          margin: 0; }
+          #homePage .content .banner .magnet .row .makeAppointment .maParts .maDate .form-group .input-group {
+            width: 100%; }
+            #homePage .content .banner .magnet .row .makeAppointment .maParts .maDate .form-group .input-group .input-group-addon {
+              top: -2px; }
+        #homePage .content .banner .magnet .row .makeAppointment .maParts .maComment {
+          position: relative;
+          width: 100%;
+          float: left; }
+          #homePage .content .banner .magnet .row .makeAppointment .maParts .maComment form textarea {
+            width: 100%;
+            height: 78px;
+            resize: none;
+            border: medium none;
+            outline: medium none;
+            color: #91a8ae;
+            float: left;
+            font-size: 13px;
+            margin: 2px 0;
+            padding: 9px 15px; }
+          #homePage .content .banner .magnet .row .makeAppointment .maParts .maComment button {
+            text-transform: uppercase;
+            background: #f6772c;
+            font-size: 13px;
+            font-weight: 700;
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            position: absolute;
+            bottom: 3px;
+            right: 1px; }
+    #homePage .content .banner .magnet .row .workingTimes {
+      background: #f8da73;
+      padding: 35px 15px 10px 15px;
+      min-height: 266px; }
+      #homePage .content .banner .magnet .row .workingTimes .wtDetails {
+        width: 29%;
+        float: left;
+        background: url(../img/line.png) right top repeat-y;
+        min-height: 125px; }
+        #homePage .content .banner .magnet .row .workingTimes .wtDetails p {
+          font-size: 13px;
+          color: #685e3b;
+          line-height: 22px; }
+          #homePage .content .banner .magnet .row .workingTimes .wtDetails p span {
+            display: block;
+            color: #383d48;
+            font-weight: bold; }
+      #homePage .content .banner .magnet .row .workingTimes .wtDescription {
+        float: left;
+        width: 67%;
+        padding-left: 28px; }
+        #homePage .content .banner .magnet .row .workingTimes .wtDescription p {
+          font-size: 13px;
+          color: #84784c;
+          line-height: 22px; }
+        #homePage .content .banner .magnet .row .workingTimes .wtDescription a {
+          font-size: 13px;
+          background: #f6772c url(../img/but-ar.png) 90% center no-repeat;
+          color: white;
+          font-weight: bold;
+          border: none;
+          border-radius: 2px;
+          width: 142px;
+          padding: 7px 17px 9px 17px;
+          text-align: left;
+          text-transform: uppercase;
+          margin: 24px 0;
+          float: left; }
+#homePage .content .updatesDoctors {
+  width: 100%;
+  float: left;
+  background: #f0f8ff;
+  padding: 63px 0; }
+  #homePage .content .updatesDoctors .container .row .newsDocDirections a {
+    height: 14px;
+    margin: 2px 0 0;
+    position: absolute;
+    top: 23px;
+    width: 8px; }
+    #homePage .content .updatesDoctors .container .row .newsDocDirections a:first-child {
+      background: url(../img/left-arrow.png) no-repeat;
+      right: 28px; }
+    #homePage .content .updatesDoctors .container .row .newsDocDirections a:last-child {
+      background: url(../img/right-arrow.png) no-repeat;
+      right: 14px; }
+  #homePage .content .updatesDoctors .container .row .newsSide {
+    position: relative; }
+    #homePage .content .updatesDoctors .container .row .newsSide .news {
+      float: left; }
+      #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper {
+        max-width: 100%;
+        margin: 0 auto; }
+        #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport {
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          height: 363px; }
+          #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast {
+            width: auto;
+            position: relative;
+            transform: translate3d(0px, -335px, 0px);
+            list-style: outside none none;
+            padding-left: 0; }
+            #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li {
+              float: none;
+              position: relative;
+              border-bottom: 1px dotted #cbdceb;
+              padding: 28px 0;
+              top: 360px;
+              width: 100% !important; }
+              #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li .newsDate {
+                background: none;
+                border: 2px solid #000;
+                color: #000;
+                float: left;
+                font-size: 14px;
+                line-height: 1.1;
+                height: 68px;
+                width: 68px;
+                padding-top: 10px;
+                text-align: center; }
+                #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li .newsDate span {
+                  font-size: 30px;
+                  font-weight: 800; }
+              #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li .newsText {
+                padding-left: 100px; }
+                #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li .newsText h2 {
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 13.5px;
+                  color: #383d48;
+                  text-transform: uppercase;
+                  font-weight: 800;
+                  padding-bottom: 12px; }
+                #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li .newsText p {
+                  color: #6e868c;
+                  padding: 0;
+                  font-size: 13.5px; }
+              #homePage .content .updatesDoctors .container .row .newsSide .news .updatesWrapper .updatesViewport .disast li:first-child {
+                padding-top: 0; }
+  #homePage .content .updatesDoctors .container .row .ourDoctors {
+    position: relative; }
+    #homePage .content .updatesDoctors .container .row .ourDoctors h2 {
+      padding-left: 15px; }
+    #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper {
+      max-width: 100%;
+      margin: 0 auto; }
+      #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort {
+        width: 100%;
+        height: 352px;
+        overflow: hidden;
+        position: relative; }
+        #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide {
+          position: relative;
+          width: auto;
+          width: 415%; }
+          #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li {
+            width: 750px;
+            float: left;
+            position: relative;
+            left: 0; }
+            #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 {
+              padding-right: 0;
+              margin-bottom: 15px;
+              float: left; }
+              #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox {
+                background: white;
+                border: 1px solid #dceaf6;
+                min-height: 161px;
+                position: relative; }
+                #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docPics {
+                  width: 153px;
+                  height: 159px;
+                  float: left; }
+                #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docName {
+                  float: left;
+                  width: 204px;
+                  padding: 45px 0px 53px 25px; }
+                  #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docName h2 {
+                    color: #6e868c;
+                    font-size: 12.99px;
+                    font-family: "Open Sans",sans-serif;
+                    padding-left: 0; }
+                    #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docName h2 span {
+                      color: #383d48;
+                      font-size: 13.48px;
+                      font-family: 'Raleway', sans-serif;
+                      text-transform: uppercase;
+                      padding-bottom: 3px;
+                      display: block;
+                      font-weight: 800; }
+                #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docSocialMedia {
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                  border-top: 1px solid #dceaf6;
+                  width: 204px;
+                  height: 29px;
+                  float: left; }
+                  #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docSocialMedia a {
+                    padding: 4px 10px 6px;
+                    border-right: 1px solid #dceaf6;
+                    font-size: 13.5px;
+                    color: #383d48; }
+                    #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docSocialMedia a:first-child {
+                      padding-left: 25px !important; }
+                    #homePage .content .updatesDoctors .container .row .ourDoctors .allDoctors .docWrapper .docViewPort .docSlide li .col-sm-6 .whiteBox .docSocialMedia a:last-child {
+                      border-color: transparent; }
+#homePage .content .historyDepartments {
+  width: 100%;
+  background: white;
+  float: left;
+  padding: 63px 0; }
+  #homePage .content .historyDepartments .history p {
+    color: #4c6880;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 20px 0; }
+  #homePage .content .historyDepartments .history a {
+    background-position: right 16px;
+    color: #383d48;
+    font-size: 13.5px;
+    padding: 10px 10px 0 0; }
+  #homePage .content .historyDepartments .department .dept {
+    border: 1px solid #dceaf6;
+    float: left;
+    width: 100%; }
+    #homePage .content .historyDepartments .department .dept .depAccordion li {
+      width: 100%;
+      float: left; }
+      #homePage .content .historyDepartments .department .dept .depAccordion li:nth-child(2) {
+        border-top: solid 1px #dceaf6;
+        background: white; }
+      #homePage .content .historyDepartments .department .dept .depAccordion li h3 {
+        font-size: 12.5px;
+        color: #383d48;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 9px 17px;
+        width: 100%;
+        cursor: pointer; }
+        #homePage .content .historyDepartments .department .dept .depAccordion li h3 img {
+          padding-right: 10px; }
+        #homePage .content .historyDepartments .department .dept .depAccordion li h3 span {
+          font-size: 12.5px;
+          color: #383d48;
+          font-weight: 700;
+          text-transform: uppercase; }
+      #homePage .content .historyDepartments .department .dept .depAccordion li #panel1, #homePage .content .historyDepartments .department .dept .depAccordion li #panel2 {
+        display: block; }
+        #homePage .content .historyDepartments .department .dept .depAccordion li #panel1 img, #homePage .content .historyDepartments .department .dept .depAccordion li #panel2 img {
+          float: left;
+          padding-right: 10px; }
+        #homePage .content .historyDepartments .department .dept .depAccordion li #panel1 p, #homePage .content .historyDepartments .department .dept .depAccordion li #panel2 p {
+          color: #4c6880;
+          font-size: 13px;
+          padding-bottom: 10px; }
+        #homePage .content .historyDepartments .department .dept .depAccordion li #panel1 a, #homePage .content .historyDepartments .department .dept .depAccordion li #panel2 a {
+          font-size: 13.5px;
+          color: #383d48;
+          padding: 0 10px 0 0;
+          margin: 0; }
+      #homePage .content .historyDepartments .department .dept .depAccordion li #panel2 {
+        height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-color: transparent; }
+  #homePage .content .historyDepartments .department .bg {
+    display: inline-block;
+    margin-top: 33px;
+    font-size: 13.5px;
+    color: #383d48;
+    padding: 0 10px 0 0; }
+#homePage .services {
+  width: 100%;
+  float: left;
+  background: #f0f8ff; }
+  #homePage .services .col-md-3 .serviceBox {
+    border: 1px solid #e6ebf4;
+    margin: 15px 0;
+    min-height: 280px;
+    padding: 25px; }
+    #homePage .services .col-md-3 .serviceBox h2 {
+      margin-top: 20px;
+      margin-bottom: 9px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #383d48;
+      text-transform: uppercase; }
+    #homePage .services .col-md-3 .serviceBox p {
+      color: #6e868c;
+      font-size: 13.5px;
+      line-height: 24px;
+      margin-bottom: 50px; }
+    #homePage .services .col-md-3 .serviceBox a {
+      color: #6e868c;
+      font-size: 13.5px;
+      padding: 0 10px 0 0; }
+
+#aboutUs .history {
+  clear: both; }
+  #aboutUs .history .col-sm-8 h2 {
+    font-size: 24px; }
+  #aboutUs .history .col-sm-8 p {
+    font-size: 13px;
+    color: #4c6880;
+    line-height: 22px; }
+  #aboutUs .history .col-sm-4 {
+    position: relative; }
+    #aboutUs .history .col-sm-4 div:first-child img {
+      float: right; }
+    #aboutUs .history .col-sm-4 div:nth-child(2) img {
+      position: absolute;
+      top: 113px; }
+#aboutUs .departmentSection {
+  clear: both;
+  padding: 60px 0; }
+  #aboutUs .departmentSection .container .row .depAccordion {
+    padding: 0; }
+    #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 {
+      width: 50%;
+      border: none; }
+      #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li {
+        width: 100%;
+        float: left; }
+        #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li h3 {
+          border: solid 1px #dceaf6;
+          border-bottom: none;
+          background-color: #f0f8ff !important;
+          cursor: pointer;
+          font-size: 12.5px;
+          color: #383d48;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding: 9px 17px;
+          width: 100%; }
+        #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down1 {
+          background-color: aliceblue;
+          padding: 28px 15px;
+          display: block;
+          border-top: 1px solid #dceaf6; }
+        #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down2 {
+          display: block;
+          height: 0;
+          padding-top: 0;
+          padding-bottom: 0; }
+        #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down1,
+        #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down2 {
+          float: left;
+          width: 100%; }
+          #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down1 img,
+          #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down2 img {
+            padding-right: 10px;
+            float: left;
+            width: 198px;
+            height: 104px; }
+          #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down1 p,
+          #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li #down2 p {
+            color: #4c6880;
+            font-size: 13px;
+            padding-bottom: 10px; }
+      #aboutUs .departmentSection .container .row .depAccordion .col-sm-6 ul li:last-child h3 {
+        border-bottom: 1px solid #dceaf6; }
+
+#appointment .firstSection .row .inputs .appointments input, #appointment .firstSection .row .inputs .appointments textarea {
+  width: 100%;
+  height: auto;
+  color: #6e868c;
+  border: 1px solid #e4edf6;
+  padding: 9px 15px;
+  margin: 7px 0;
+  font-size: 13.5px; }
+#appointment .firstSection .row .inputs .appointments textarea {
+  resize: none;
+  min-height: 180px; }
+#appointment .firstSection .row .inputs .appointments button {
+  background: none repeat scroll 0 0 #f6772c;
+  color: white;
+  border: medium none;
+  outline: medium none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  padding: 6px 18px;
+  text-transform: uppercase; }
+#appointment .firstSection .row .inputs .appointments fieldset .form-group .input-group {
+  width: 100%; }
+#appointment .firstSection .row .inputs .appointments .nms {
+  float: left;
+  color: #6e868c;
+  font-size: 13.5px;
+  font-weight: normal;
+  padding-top: 4px; }
+#appointment .firstSection .row .inputs .appointments .maNotification {
+  position: initial;
+  color: black;
+  font-size: 16px;
+  padding: 0;
+  text-transform: capitalize; }
+
+#blog .content {
+  clear: both; }
+  #blog .content .leftSection ul li:nth-child(n+4) {
+    display: none; }
+  #blog .content .leftSection .pagerSection {
+    float: right;
+    margin-top: 25px; }
+    #blog .content .leftSection .pagerSection a {
+      width: 33px;
+      height: 33px;
+      border: 1px solid #dce8f1;
+      float: left;
+      padding-top: 5.5px;
+      text-align: center;
+      font-size: 13.5px;
+      color: #383d48;
+      margin-right: 10px;
+      cursor: pointer; }
+    #blog .content .leftSection .pagerSection .pLeft {
+      background: url(../img/p-left.png) left top no-repeat;
+      border: 1px solid #6acff0 !important; }
+    #blog .content .leftSection .pagerSection .pRight {
+      background: url(../img/p-right.png) left top no-repeat;
+      border: 1px solid #6acff0 !important; }
+
+#blogDetail .leftSection .quote p {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #383d48;
+  padding-left: 127px;
+  background: url(../img/quote-circle.png) 6% 40% no-repeat; }
+#blogDetail .leftSection .comments {
+  margin: 40px 0;
+  width: 100%;
+  float: left; }
+  #blogDetail .leftSection .comments h2 {
+    font-size: 24px;
+    color: #383d48;
+    font-weight: 800;
+    text-transform: uppercase; }
+  #blogDetail .leftSection .comments ul li {
+    padding: 35px 0;
+    float: left;
+    border-bottom: 1px solid #dce8f1; }
+    #blogDetail .leftSection .comments ul li h3 {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase; }
+      #blogDetail .leftSection .comments ul li h3 span {
+        float: right;
+        color: #383d48; }
+    #blogDetail .leftSection .comments ul li p {
+      line-height: 19px;
+      padding: 6px 0 0 0; }
+    #blogDetail .leftSection .comments ul li .bg {
+      background-position: 100% 8px; }
+    #blogDetail .leftSection .comments ul li a {
+      font-size: 13.5px;
+      color: #383d48;
+      padding-right: 10px;
+      float: left;
+      margin: 20px 0 0 0; }
+#blogDetail .commentLeave {
+  padding: 60px 0; }
+  #blogDetail .commentLeave .container .row .center {
+    float: none;
+    margin: 0 auto;
+    padding: 0; }
+    #blogDetail .commentLeave .container .row .center h2 {
+      font-size: 24px;
+      color: #383d48;
+      font-weight: 800;
+      text-transform: uppercase; }
+    #blogDetail .commentLeave .container .row .center .form-less {
+      padding: 25px 0 0; }
+      #blogDetail .commentLeave .container .row .center .form-less input {
+        border: 1px solid #e2ecf5;
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+        outline: medium none;
+        padding: 10px 15px;
+        color: #6e868c;
+        font-size: 13.5px; }
+    #blogDetail .commentLeave .container .row .center button {
+      border: none;
+      border-radius: 4px;
+      outline: none;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      background: #f6772c;
+      text-transform: uppercase;
+      padding: 8px 23px; }
+
+#contact .cover_photo {
+  height: 240px; }
+#contact .contact form input {
+  width: 100%;
+  padding: 9px 15px;
+  margin-top: 5px;
+  border: 1px solid  #e4edf6; }
+#contact .contact form textarea {
+  width: 100%;
+  border: 1px solid  #e4edf6;
+  margin-top: 5px;
+  resize: none;
+  min-height: 190px; }
+#contact .contact form button {
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  margin-top: 10px;
+  background: #f6772c;
+  text-transform: uppercase;
+  border: none; }
+#contact .contact form .maNotification {
+  font-size: 16px;
+  color: #333333;
+  position: static;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize; }
+#contact .map .tittle {
+  font-size: 24px; }
+#contact .map .map-cov {
+  width: 100%;
+  float: left;
+  height: 199px;
+  overflow: hidden; }
+  #contact .map .map-cov .m5 {
+    margin-top: 5px; }
+#contact .map .ids {
+  margin-top: 31px;
+  padding-left: 0;
+  padding-right: 0; }
+  #contact .map .ids h2 {
+    font-size: 13.5px;
+    color: #6e868c;
+    line-height: 24px;
+    padding-left: 27px;
+    font-family: "Open Sans",sans-serif;
+    text-transform: none; }
+    #contact .map .ids h2 span {
+      display: block; }
+
+#doctors .jst-cov {
+  float: left;
+  padding-bottom: 15px;
+  width: 50%; }
+#doctors .filter button {
+  outline: none;
+  border: none;
+  background: #6acff0;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  width: 127px;
+  padding: 10px 0;
+  margin: 0 0 0 12px;
+  float: right; }
+#doctors .filter .select {
+  width: 67%; }
+#doctors .doc .doctor {
+  border-bottom: 2px solid #ffe073;
+  padding-bottom: 16px;
+  margin-bottom: 40px; }
+  #doctors .doc .doctor img {
+    float: left; }
+  #doctors .doc .doctor .social-net {
+    float: none;
+    text-align: center;
+    width: 64px;
+    height: 30px;
+    clear: both;
+    margin: 0 auto;
+    padding-top: 11px; }
+    #doctors .doc .doctor .social-net a {
+      padding: 14px 18px 5px 0;
+      float: left; }
+    #doctors .doc .doctor .social-net .face-d {
+      background: url(../img/face.png) left top no-repeat; }
+      #doctors .doc .doctor .social-net .face-d:hover {
+        background: url(../img/face-hov.png) left top no-repeat; }
+    #doctors .doc .doctor .social-net .twitt-d {
+      background: url(../img/twitt.png) left top no-repeat; }
+      #doctors .doc .doctor .social-net .twitt-d:hover {
+        background: url(../img/twitt-hov.png) left top no-repeat; }
+    #doctors .doc .doctor .social-net .google-d {
+      background: url(../img/google.png) left top no-repeat; }
+      #doctors .doc .doctor .social-net .google-d:hover {
+        background: url(../img/google-hov.png) left top no-repeat; }
+  #doctors .doc .doctor h2 {
+    color: #383d48;
+    font-weight: 800;
+    font-size: 13.5px;
+    text-align: center;
+    text-transform: uppercase; }
+    #doctors .doc .doctor h2 span {
+      display: block;
+      color: #4c6880;
+      font-size: 13px;
+      font-weight: normal;
+      padding-top: 5px; }
+#doctors .doc:hover .doctor {
+  border-bottom: 2px solid #6acff0; }
+
+#error404 .error-4 {
+  padding-top: 130px;
+  border-top: 1px solid #dbebf5;
+  padding-bottom: 140px; }
+  #error404 .error-4 h2 {
+    color: #383d48;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center; }
+    #error404 .error-4 h2 span {
+      color: #9dacb8;
+      font-size: 13px;
+      display: block;
+      text-align: center; }
+  #error404 .error-4 .e4 {
+    font-size: 200px;
+    text-align: center;
+    font-weight: 900;
+    width: 100%; }
+    #error404 .error-4 .e4 p {
+      display: inline-block;
+      text-align: center; }
+    #error404 .error-4 .e4 p:nth-child(n+2) {
+      margin-left: -55px; }
+    #error404 .error-4 .e4 .color-comb1 {
+      color: #FFE073; }
+    #error404 .error-4 .e4 .color-comb2 {
+      color: #CDDA9C; }
+    #error404 .error-4 .e4 .color-comb3 {
+      color: #9BD4C6; }
+
+#news .filter button {
+  outline: none;
+  border: none;
+  background: #6acff0;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  width: 127px;
+  padding: 10px 0;
+  margin: 0 0 0 12px;
+  float: right; }
+#news .filter .select {
+  width: 67%; }
+#news .newsSection .newsCovering {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #e3eaef;
+  padding: 15px 0 35px 0; }
+  #news .newsSection .newsCovering:last-child {
+    border-bottom: transparent; }
+  #news .newsSection .newsCovering .imageSection {
+    padding-left: 0; }
+    #news .newsSection .newsCovering .imageSection img {
+      float: left;
+      width: 100%; }
+    #news .newsSection .newsCovering .imageSection h2 {
+      font-size: 13px;
+      color: #383d48;
+      background: #ffe073;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+      padding: 10px 0;
+      clear: left; }
+  #news .newsSection .newsCovering .newsDetail h2 {
+    color: #383d48;
+    font-size: 13.5px;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    padding: 10px 0; }
+    #news .newsSection .newsCovering .newsDetail h2 span {
+      display: block;
+      font-family: "Raleway", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      color: #868b97;
+      padding-top: 5px;
+      padding-bottom: 11px;
+      background: url(../img/yellow-bg.png) left bottom no-repeat; }
+  #news .newsSection .newsCovering .newsDetail p {
+    font-size: 13.5px;
+    color: #6e868c;
+    line-height: 24px; }
+
+#services .firstSection .container .row .jst-cov {
+  float: left;
+  width: 100%;
+  padding-bottom: 15px; }
+#services .firstSection .container .row .service .service-box {
+  float: left;
+  min-height: 0;
+  padding: 37px 25px;
+  height: 300px; }
+  #services .firstSection .container .row .service .service-box img {
+    float: left;
+    padding-right: 28px; }
+  #services .firstSection .container .row .service .service-box .lib {
+    float: left;
+    width: 80%; }
+  #services .firstSection .container .row .service .service-box h2 {
+    margin-top: 2px; }
+  #services .firstSection .container .row .service .service-box p {
+    margin-bottom: 0;
+    line-height: 24px;
+    font-size: 13.5px; }
+#services .happyClients {
+  padding: 50px 0;
+  float: left;
+  background: #f0f8ff;
+  width: 100%; }
+  #services .happyClients .slider-cover {
+    width: 100%;
+    float: left;
+    position: relative; }
+    #services .happyClients .slider-cover .bx-wrapper {
+      max-width: 100%; }
+      #services .happyClients .slider-cover .bx-wrapper .bx-viewport {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 165px; }
+        #services .happyClients .slider-cover .bx-wrapper .bx-viewport .happy {
+          width: 615%;
+          position: relative;
+          transition-duration: 0s; }
+          #services .happyClients .slider-cover .bx-wrapper .bx-viewport .happy li {
+            float: left;
+            list-style: none;
+            left: 0;
+            position: relative;
+            width: 1170px;
+            margin: 2px; }
+            #services .happyClients .slider-cover .bx-wrapper .bx-viewport .happy li .small-let p {
+              font-size: 15px;
+              color: #6e868c;
+              font-family: "Lora", serif;
+              font-style: italic;
+              padding: 37px 0 8px 0;
+              background: url(../img/quote-l.png) left top no-repeat, url(../img/quote-r.png) bottom right no-repeat; }
+            #services .happyClients .slider-cover .bx-wrapper .bx-viewport .happy li .small-let h2 {
+              font-size: 13.5px;
+              color: #6e868c;
+              font-weight: normal;
+              text-transform: uppercase;
+              line-height: 25px;
+              padding-top: 5px; }
+              #services .happyClients .slider-cover .bx-wrapper .bx-viewport .happy li .small-let h2 span {
+                font-size: 13.5px;
+                color: #6e868c;
+                font-weight: 600;
+                display: block; }
+      #services .happyClients .slider-cover .bx-wrapper .bx-controls .bx-pager {
+        position: absolute;
+        right: 0;
+        top: 0; }
+        #services .happyClients .slider-cover .bx-wrapper .bx-controls .bx-pager .bx-pager-item {
+          float: left;
+          height: 14px;
+          width: 14px;
+          background: #dce8f1;
+          border-radius: 50%;
+          margin: 0 2px;
+          text-indent: 0px;
+          overflow: hidden;
+          cursor: pointer; }
+          #services .happyClients .slider-cover .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link,
+          #services .happyClients .slider-cover .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link:hover {
+            color: #dce8f1; }
+          #services .happyClients .slider-cover .bx-wrapper .bx-controls .bx-pager .bx-pager-item .active {
+            background: #ffe073;
+            color: #ffe073;
+            padding: 15px; }
+
+#timetable .doc h3 {
+  font-size: 13px;
+  color: #000;
+  font-weight: normal;
+  background: #ffe073;
+  text-align: center;
+  padding: 16px 0;
+  clear: left;
+  text-transform: uppercase; }
+#timetable .doc .h3active {
+  background: #6acff0;
+  color: white; }
+#timetable .doc:hover h3 {
+  background: #6acff0;
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */

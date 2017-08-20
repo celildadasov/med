@@ -1,0 +1,32 @@
+#error404 .error-4 {
+  padding-top: 130px;
+  border-top: 1px solid #dbebf5;
+  padding-bottom: 140px; }
+  #error404 .error-4 h2 {
+    color: #383d48;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center; }
+    #error404 .error-4 h2 span {
+      color: #9dacb8;
+      font-size: 13px;
+      display: block;
+      text-align: center; }
+  #error404 .error-4 .e4 {
+    font-size: 200px;
+    text-align: center;
+    font-weight: 900;
+    width: 100%; }
+    #error404 .error-4 .e4 p {
+      display: inline-block;
+      text-align: center; }
+    #error404 .error-4 .e4 p:nth-child(n+2) {
+      margin-left: -55px; }
+    #error404 .error-4 .e4 .color-comb1 {
+      color: #FFE073; }
+    #error404 .error-4 .e4 .color-comb2 {
+      color: #CDDA9C; }
+    #error404 .error-4 .e4 .color-comb3 {
+      color: #9BD4C6; }
+
+/*# sourceMappingURL=error.css.map */
